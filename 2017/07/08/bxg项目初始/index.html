@@ -1,0 +1,792 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="web, html5, js, css3," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="默认事件submit会有默认的提交行为，那个表单就会提交，所以需要return false/preventDefalut来阻止标签的默认行为 a 标签的默认跳转 submit 的表单提交，表单的默认提交方式时get方式，想要改变成post的提交方式的时候methord=&amp;quot;post&amp;quot; 浏览器的默认右击菜单 拖拽的时候会有默认行为 文字选中的时候也会有默认行为 原生js的retur">
+<meta name="keywords" content="web, html5, js, css3">
+<meta property="og:type" content="article">
+<meta property="og:title" content="bxg项目初始">
+<meta property="og:url" content="http://xionglinxi95.github.io/2017/07/08/bxg项目初始/index.html">
+<meta property="og:site_name" content="XiongLX">
+<meta property="og:description" content="默认事件submit会有默认的提交行为，那个表单就会提交，所以需要return false/preventDefalut来阻止标签的默认行为 a 标签的默认跳转 submit 的表单提交，表单的默认提交方式时get方式，想要改变成post的提交方式的时候methord=&amp;quot;post&amp;quot; 浏览器的默认右击菜单 拖拽的时候会有默认行为 文字选中的时候也会有默认行为 原生js的retur">
+<meta property="og:updated_time" content="2017-07-08T15:44:06.491Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="bxg项目初始">
+<meta name="twitter:description" content="默认事件submit会有默认的提交行为，那个表单就会提交，所以需要return false/preventDefalut来阻止标签的默认行为 a 标签的默认跳转 submit 的表单提交，表单的默认提交方式时get方式，想要改变成post的提交方式的时候methord=&amp;quot;post&amp;quot; 浏览器的默认右击菜单 拖拽的时候会有默认行为 文字选中的时候也会有默认行为 原生js的retur">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://xionglinxi95.github.io/2017/07/08/bxg项目初始/"/>
+
+
+
+
+
+  <title>bxg项目初始 | XiongLX</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">XiongLX</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://xionglinxi95.github.io/2017/07/08/bxg项目初始/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="linxi xiong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="XiongLX">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">bxg项目初始</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-08T23:33:38+08:00">
+                2017-07-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="默认事件"><a href="#默认事件" class="headerlink" title="默认事件"></a>默认事件</h3><pre><code>submit会有默认的提交行为，那个表单就会提交，所以需要return false/preventDefalut来阻止标签的默认行为
+a 标签的默认跳转
+submit 的表单提交，表单的默认提交方式时get方式，想要改变成post的提交方式的时候methord=&quot;post&quot;
+浏览器的默认右击菜单
+拖拽的时候会有默认行为
+文字选中的时候也会有默认行为
+原生js的return false只能阻止默认行为
+jq的return false还可以阻止冒泡
+</code></pre><a id="more"></a>
+<h3 id="session和cookie分析"><a href="#session和cookie分析" class="headerlink" title="session和cookie分析"></a>session和cookie分析</h3><pre><code>session(服务器)是属于后台（服务器端的技术）的，cookie(客户端)是属于前端（浏览器的技术）的
+</code></pre><ul>
+<li>http协议是无状态的（状态一种记录的行为，例如你登录一个网站）</li>
+<li>但是实际情况需要维护客户端与服务器之间的状态</li>
+<li>可以通过session和cookie来解决这个问题</li>
+</ul>
+<h3 id="cookie基本操作"><a href="#cookie基本操作" class="headerlink" title="cookie基本操作"></a>cookie基本操作</h3><ul>
+<li>分类：<ul>
+<li>会话cookie(session cookie)<ul>
+<li>只会保留在浏览器中，不会保留在文件中，当浏览器关闭则不再</li>
+</ul>
+</li>
+<li>持久cookie(persistan cookie)(持久的cookie会把cookie内容存储到浏览器指定的文件中)–》添加expires</li>
+</ul>
+</li>
+<li><p>var data = new Date();<br>data.setDate(data.getDate()+7);<br>// 当前日期的后面7天<br>document.cookie=’hello=world; expires=’+data.toGMTString();<br>// 这个时间是cookie的特定的时间格式</p>
+<p>document.cookie=’hello=world; expires=’+data.toGMTString()+ ‘; path=/‘;<strong><strong>注意一下这里的格式</strong></strong><br>//设置的根路径，所以在所有根路径下的文件都能访问到，当然path的路径也是可以修改的，只有在path设置的那个路径<br>// 的下面才可以访问到之前所设置的cookie,否则访问不到，如果不设置path,则默认path的值是当前文件的上一级目录，只有在上一级目录下的内容才可以被访问到这个cookie的内容，在这个目录上或者同级都将访问不到。<br>// console.log(document.cookie);</p>
+</li>
+<li><p>获取cookie—-&gt; document.cookie</p>
+</li>
+<li>设置cookie—-&gt;document.cookie=’username=list’</li>
+<li>cookie的设置是累加的，之前设置的内容不会丢失（但是在关闭浏览器的时候内容内容消失，输出的情况下只是一个空字符串），cookie之间是用； 来分割的（逗号与空格）</li>
+<li>cookie的访问规则如下(在浏览器的设置里面可以看到访问页面的cookie以及cookie的日期和路径)</li>
+<li><p>获取指定的cokie的值（获取的cookie值都是字符串）—–》利用“; ”来分割</p>
+</li>
+<li><p>利用cookie.js插件的api的使用，removeCOOkie()的时候如果不设置path则删除当前的路径下的指定的名字。设置的话则根据设置的来说删除。</p>
+</li>
+</ul>
+<h3 id="模糊点"><a href="#模糊点" class="headerlink" title="模糊点"></a>模糊点</h3><pre><code>框架、库、插件、组件、控件
+    框架：一些通用功能的（例如一个框架可以使用在这个网站也可以使用在哪个王炸）
+    库：提供方法
+    ps:但是框架和库在前端方面没有什么特别的区别
+
+    组件，插件，控件都是基于框框架和库的基础上的
+    组件是一个功能或者模块（轮播图）这方面所有的
+</code></pre><h3 id="session"><a href="#session" class="headerlink" title="session"></a>session</h3><ul>
+<li>session是服务器端技术</li>
+<li>session在开启的时候会生成一个唯一编号PHPSESSION</li>
+<li>session_start()</li>
+<li>$_SESSION[‘loginInfo’] = shuju—&gt;这个代码只能放在php中 //；//将shuju数据传入</li>
+<li>session里面可以存储数据（上条），</li>
+<li>setcookie(‘PHPSESSION’,’’);将数据情况</li>
+<li>session_destroy();</li>
+<li></li>
+</ul>
+<h3 id="模块化概念"><a href="#模块化概念" class="headerlink" title="模块化概念"></a>模块化概念</h3><p>+</p>
+<h3 id="require-js"><a href="#require-js" class="headerlink" title="require.js"></a>require.js</h3><ul>
+<li>文件加载的第一种方式<ul>
+<li>data-main = ‘入口函数，可以取消后缀’,这个是在html文件中添加的引入require.js的时候添加的一个自定义属性。</li>
+<li></li>
+</ul>
+</li>
+<li><p>入口函数的规则 main.js</p>
+<pre><code>define（[&apos;./m1.js&apos;,&apos;./m2&apos;],function(m1,m2){
+    var ret = m1.sum(1,2);
+    console.log(ret);
+}）;
+//有返回值的文件写在前面，不然没有返回值的文件可能会对其造成影响。
+</code></pre></li>
+</ul>
+<p>-依赖文件的写法 m1.js</p>
+<pre><code>define（function(){
+    function sum(a,b){
+        return parseInt(a)+parseInte(b)
+    }
+    function substrck(a,b){
+        return parseInt(a)-parseInte(b)
+    }
+    return {
+        sum:sum,
+        substrck:substeck
+    }
+}）;
+</code></pre><ul>
+<li><p>依赖文件 m2.js</p>
+<pre><code>define({
+    username:&apos;xiao&apos;,
+    age :&apos;12&apos;,
+    sex : &apos;mail&apos;
+})
+</code></pre></li>
+<li><p>另外一种加载文件的方式,也就是上面的html文件中的写法，不需要自定义mian属性，只需要添加requyrejs的插件，需要在《script&gt;标签里面添加下面的语言。</p>
+<pre><code>requirejs([&apos;./main&apos;],function(){})
+</code></pre></li>
+</ul>
+<h3 id="requirejs-config-‘-common-js’"><a href="#requirejs-config-‘-common-js’" class="headerlink" title="requirejs.config(‘./common/js’)"></a>requirejs.config(‘./common/js’)</h3><pre><code>requirejs.config({
+baseUrl:&apos;./common/js&apos;,
+paths:{
+    htjs:&apos;hjdskfjiosdkn&apos;
+}，
+shim : {
+    htjs:{
+        exports:&apos;htjs里面的某个变量名&apos;
+  //用来指定某些非标准的模块导出标准模块
+    }
+}
+}),js下面的文件是js文件,然后requrejs里面的main文件是相对于js下面的文件的路径而言的。
+hjdskfjiosdkn是一个js下面的js文件，但是名字很长，可以利用==paths==取一个别名htjs,这个别名在requrjs下面直接使用别名的方式就可以了，不用考虑文件的路径
+
+pahts以及requrrejs里面的路径都会依赖baseurl的路径来定位
+
+requrejs([&apos;&apos;../../main&apos;，‘htjs’],function(){})
+</code></pre><ul>
+<li>requrejs也兼容seajs的方法</li>
+<li>define（function（require,exports,module））</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/web-html5-js-css3/" rel="tag"># web, html5, js, css3</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/07/06/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="linxi xiong" />
+          <p class="site-author-name" itemprop="name">linxi xiong</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#默认事件"><span class="nav-number">1.</span> <span class="nav-text">默认事件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#session和cookie分析"><span class="nav-number">2.</span> <span class="nav-text">session和cookie分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cookie基本操作"><span class="nav-number">3.</span> <span class="nav-text">cookie基本操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#模糊点"><span class="nav-number">4.</span> <span class="nav-text">模糊点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#session"><span class="nav-number">5.</span> <span class="nav-text">session</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#模块化概念"><span class="nav-number">6.</span> <span class="nav-text">模块化概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#require-js"><span class="nav-number">7.</span> <span class="nav-text">require.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#requirejs-config-‘-common-js’"><span class="nav-number">8.</span> <span class="nav-text">requirejs.config(‘./common/js’)</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">linxi xiong</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

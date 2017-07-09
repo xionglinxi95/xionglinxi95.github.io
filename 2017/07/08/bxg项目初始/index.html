@@ -100,7 +100,7 @@
 <meta property="og:url" content="http://xionglinxi95.github.io/2017/07/08/bxg项目初始/index.html">
 <meta property="og:site_name" content="XiongLX">
 <meta property="og:description" content="默认事件submit会有默认的提交行为，那个表单就会提交，所以需要return false/preventDefalut来阻止标签的默认行为 a 标签的默认跳转 submit 的表单提交，表单的默认提交方式时get方式，想要改变成post的提交方式的时候methord=&amp;quot;post&amp;quot; 浏览器的默认右击菜单 拖拽的时候会有默认行为 文字选中的时候也会有默认行为 原生js的retur">
-<meta property="og:updated_time" content="2017-07-08T15:52:14.138Z">
+<meta property="og:updated_time" content="2017-07-09T02:40:16.833Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="bxg项目初始">
 <meta name="twitter:description" content="默认事件submit会有默认的提交行为，那个表单就会提交，所以需要return false/preventDefalut来阻止标签的默认行为 a 标签的默认跳转 submit 的表单提交，表单的默认提交方式时get方式，想要改变成post的提交方式的时候methord=&amp;quot;post&amp;quot; 浏览器的默认右击菜单 拖拽的时候会有默认行为 文字选中的时候也会有默认行为 原生js的retur">
@@ -422,7 +422,7 @@ paths:{
 shim : {
     htjs:{
         exports:&apos;htjs里面的某个变量名&apos;
-  //用来指定某些非标准的模块导出标准模块
+  //用来指定某些非标准的模块导出标准模块，没有define定义的模块属于非标准模块
     }
 }
 }),js下面的文件是js文件,然后requrejs里面的main文件是相对于js下面的文件的路径而言的。
@@ -492,6 +492,10 @@ requrejs([&apos;&apos;../../main&apos;，‘htjs’],function(){})
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/07/09/bxg第五天/" rel="prev" title="bxg第五天">
+                bxg第五天 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -563,7 +567,7 @@ requrejs([&apos;&apos;../../main&apos;，‘htjs’],function(){})
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -575,10 +579,10 @@ requrejs([&apos;&apos;../../main&apos;，‘htjs’],function(){})
             
             
             <div class="site-state-item site-state-tags">
-              
+              <a href="/tags/index.html">
                 <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">标签</span>
-              
+              </a>
             </div>
           
 

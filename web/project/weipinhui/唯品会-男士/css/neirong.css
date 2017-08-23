@@ -1,0 +1,333 @@
+.fl_brand {
+    width: 1000px;
+    height: 402px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.br_head {
+    width: 396px;
+    margin: 0 auto 30px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+}
+.br_head hr {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 1px;
+    border: 0;
+    background-color: #d9d9d9;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    z-index: -1;
+}
+.br_head .br_title {
+    margin: 0 auto;
+    width: 177px;
+    height: 30px;
+    background: #fff url(../images/rec-top.png) center top no-repeat;
+    margin-bottom: 6px;
+    /*background-image: url(../images/rec-top.png);*/
+}
+.br_head .br_en {
+    text-align: center;
+    line-height: 1;
+    letter-spacing : 1px;
+    color: #ccc;
+}
+.br_body{
+    width: 1026px;
+    height: 276px;
+    margin: 0 auto;
+}
+.br_body ul li {
+    width: 230px;
+    margin: 0 26px 20px 0;
+    overflow: hidden;
+    float: left;
+}
+.br_body ul li img {
+    width: 100%;
+    vertical-align: top;
+}
+/*分类开始*/
+.classify {
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+}
+.cl_head {
+    position: relative;
+    width: 396px;
+    margin: 0 auto 30px;
+}
+.cl_head hr {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 1px;
+    border: 0;
+    background-color: #d9d9d9;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    z-index: -1;
+}
+.cl_head .cl_title {
+    margin: 0 auto;
+    width: 177px;
+    height: 30px;
+    background: #fff url(../images/cl-top.png) center top no-repeat;
+    margin-bottom: 6px;
+    /*background-image: url(../images/rec-top.png);*/
+}
+.cl_head .cl_en {
+    text-align: center;
+    line-height: 1;
+    letter-spacing : 1px;
+    color: #ccc;
+}
+.cl_body {
+    margin-right: -30px;
+    overflow: hidden;
+}
+.cl_body .cl_item {
+    width: 230px;
+    margin-right: 26px;
+    float: left;
+    overflow: hidden;
+}
+.cl_body .cl_item img {
+    width: 80px;
+    height: 80px;
+    float: left;
+
+}
+.cl_body .cl_item .cl_into{
+    padding-left: 10px;
+    width: 140px;
+    float: left;
+    color: #666666;
+}
+.cl_body .cl_item .cl_into dt{
+    font-size: 18px;
+    color: #333;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+.cl_body .cl_item .cl_into a {
+    font-size: 12px;
+    line-height: 18px;
+    color: #666;
+    display: inline-block;
+    margin-right: 6px;
+}
+.sales{
+    margin-bottom: 20px;
+}
+.sales .sales_head {
+    margin: 0 auto 30px;
+    overflow: hidden;
+    position: relative;
+}
+.sales_head .sh_color {
+    color: #cf946c;
+    width: 28px;
+    height: 3px;
+    margin: 0 auto 15px;
+}
+.sales_head hr {
+    margin: 0;
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: #d9d9d9;
+    position: absolute;
+    bottom: 32px;
+    left: 0;
+    z-index: -1;
+}
+.sales_head .sh_title {
+    width: 371px;
+    height: 30px;
+    margin: 0 auto 6px;
+    background: #fff url(../images/sales-top.png) center top no-repeat;
+}
+.sales_head .sh_en {
+    text-align: center;
+    line-height: 1;
+    letter-spacing: 1px;
+    color: #ccc;
+}
+.sales_body {
+    width: 1036px;
+    overflow: hidden;
+}
+.sales_body .brand {
+    width: 490px;
+    margin-right: 20px;
+    float: left;
+}
+.sales_body .brand .br_photo {
+    height: 235px;
+    overflow: hidden;
+    position: relative;
+}
+.sales_body .brand .br_photo img {
+    display: inline-block;
+    width: 490px;
+    height: 235px;
+}
+.sales_body .brand .br_photo .br_mask {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.sales_body .brand .br_photo .br_mask .mask_tb {
+    color: #FFF;
+    line-height: 30px;
+    padding-left: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    background: url(../images/man.png) no-repeat;
+}
+.sales_body .brand .br_floor {
+    height: 60px;
+    padding: 0 10px;
+    overflow: hidden;
+    position: relative;
+}
+.sales_body .brand .br_floor .br_time {
+    line-height: 30px;
+    background: url(../images/man.png) 0 -30px no-repeat;
+    padding-left: 30px;
+    margin-top: 6px;
+    float: right;
+}
+.sales_body .brand .br_floor .br_dazhe {
+    margin-right: 10px;
+    float: left;
+    color: #4d4d4d;
+    overflow: hidden;
+
+}
+.sales_body .brand .br_floor .br_dazhe span{
+    color: #f10582;
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 3px;
+}
+.sales_body .brand .br_floor .br_name {
+    font-size: 14px;
+    padding-top: 11px;
+    color: #4d4d4d;
+    overflow: hidden;
+}
+
+/*热卖*/
+.sales .shot_head {
+    margin: 0 auto 30px;
+    overflow: hidden;
+    position: relative;
+}
+.shot_head .shot_color {
+    color: #cf946c;
+    width: 28px;
+    height: 3px;
+    margin: 0 auto 15px;
+}
+.shot_head hr {
+    margin: 0;
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: #d9d9d9;
+    position: absolute;
+    bottom: 32px;
+    left: 0;
+    z-index: -1;
+}
+.shot_head .shot_title {
+    width: 371px;
+    height: 30px;
+    margin: 0 auto 6px;
+    background: #fff url(../images/sales_hot.png) center top no-repeat;
+}
+.shot_head .shot_en {
+    text-align: center;
+    line-height: 1;
+    letter-spacing: 1px;
+    color: #ccc;
+}
+.shot_body {
+    width: 1036px;
+    overflow: hidden;
+}
+.shot_body .hot {
+    width: 310px;
+    margin-right: 35px;
+    float: left;
+}
+.shot_body .hot .shot_photo {
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+}
+.shot_body .hot .shot_photo img {
+    display: inline-block;
+    width: 310px;
+    height: 180px;
+}
+.shot_body .hot .shot_photo .br_mask {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.shot_body .hot .shot_photo .br_mask .mask_tb {
+    color: #FFF;
+    line-height: 30px;
+    padding-left: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    background: url(../images/man.png) no-repeat;
+}
+.shot_body .hot .shot_floor {
+    height: 55px;
+    padding: 5px 5px 0 5px;
+    overflow: hidden;
+    position: relative;
+}
+.sales_body .hot .shot_floor .shot_name {
+    font-size: 14px;
+    padding-top: 11px;
+    color: #4d4d4d;
+    overflow: hidden;
+}
+.sales_body .hot .shot_floor .shot_time {
+    line-height: 30px;
+
+
+}
+.shot_body .hot .shot_floor .shot_dazhe {
+    margin-left: 5px;
+    float: right;
+    color: #4d4d4d;
+    overflow: hidden;
+    display: inline-block;
+
+}
+.shot_body .hot .shot_floor .shot_dazhe span{
+    color: #f10582;
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 3px;
+}

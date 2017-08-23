@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*other-header开始*/
+#other-header {
+    width: 100%;
+    height: 169px;
+    /*background-color: #848484;*/
+}
+
+/*other-header结束*/
+
+/*ws-money开始*/
+#ws-money {
+    width: 100%;
+    height: 1360px;
+    /*background-color: #847241;*/
+    background-color: #f2f2f2;
+}
+
+/*ws-money结束*/
+
+/*other-footer开始*/
+#other-footer {
+    width: 100%;
+    height: 300px;
+    /*background-color: #686b84;*/
+}
+
+/*other-footer结束*/

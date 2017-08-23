@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--<title>唯品会（原Vipshop.com）特卖会：一家专门做特卖的网站_确保正品_确保低价_货到付款</title>-->
+    <title>家居家电</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/head.css"/>
+    <link rel="stylesheet" href="css/jiaju.css"/>
+    <link rel="stylesheet" href="css/foot.css"/>
+    <link rel="stylesheet" href="css/iconfont/iconfont.css" />
+    <link rel="stylesheet" href="css/iconfont1/iconfont.css" />
+    <link rel="icon" href="favicon_eef1309.ico" type="image/gif">
+    <!--工具包-->
+    <script src="js/jquery-1.11.1-min.js"></script>
+    <script src="js/jquery-1.12.4.js"></script>
+
+    <!--功能包-->
+    <script src="js/head.js"></script>
+    <script src="js/liumengmeng.js"></script>
+    <script src = "js/foot.js"></script>
+</head>
+<body>
+    <div class="zym-head clearfix">
+        <div class="top" id="headTop">
+            <div class="w">
+                <div id="cityBox" class="city-box">
+                <div class="city fl">北京 <i>▼</i></div>
+                <table id="cityList" class="city-list">
+                    <tbody>
+                    <tr>
+                        <td><p>请选择所在的收获地址</p></td>
+                    </tr>
+                    <tr>
+                        <th>A</th>
+                        <td>
+                            <span>安徽</span>
+                            <span>澳门</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>B</th>
+                        <td>
+                            <span>北京</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>C</th>
+                        <td>
+                            <span>重庆</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>F</th>
+                        <td>
+                            <span>福建</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>G</th>
+                        <td>
+                            <span>广东</span>
+                            <span>广西</span>
+                            <span>贵州</span>
+                            <span>甘肃</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>H</th>
+                        <td>
+                            <span>河北</span>
+                            <span>河南</span>
+                            <span>黑龙江</span>
+                            <span>海南</span>
+                            <span>湖北</span>
+                            <span>湖南</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>J</th>
+                        <td>
+                            <span>江苏</span>
+                            <span>吉林</span>
+                            <span>江西</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>L</th>
+                        <td>
+                            <span>辽宁</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>N</th>
+                        <td>
+                            <span>内蒙古</span>
+                            <span>宁夏</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Q</th>
+                        <td>
+                            <span>青海</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>S</th>
+                        <td>
+                            <span>上海</span>
+                            <span>山东</span>
+                            <span>山西</span>
+                            <span>四川</span>
+                            <span>陕西</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>T</th>
+                        <td>
+                            <span>台湾</span>
+                            <span>天津</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>X</th>
+                        <td>
+                            <span>西藏</span>
+                            <span>香港</span>
+                            <span>新疆</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Y</th>
+                        <td>
+                            <span>云南</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Z</th>
+                        <td>
+                            <span>浙江</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                </div>
+                <ul class="fr" id="navUl">
+                    <li>
+                        <a href="#">请登录</a>
+                        <div class="user-info" id="userInfo">
+                            <div class="user-info-top">
+                                <span class="pic"></span>
+                                <p>
+                                    <a href="#">你好!&nbsp;&nbsp;[ 请登录 ]</a>
+                                </p>
+                            </div>
+                            <div class="user-info-list" id="userInFolist">
+                                <span><a href="#">我的收藏</a></span>
+                                <span><a href="#">我的订单</a></span>
+                                <span><a href="#">零钱</a></span>
+                                <span><a href="#">我的优惠券</a></span>
+                                <span><a href="#">我的唯品币</a></span>
+                                <span><a href="#">唯品金融</a></span>
+                            </div>
+                        </div>
+                    </li>
+                    <span>/</span>
+                    <li><a href="#">注册</a></li>
+                    <span>/</span>
+                    <li><a href="#">我的订单</a></li>
+                    <span>/</span>
+                    <li class="temai">
+                        <a href="#">我的特卖</a>
+                        <div class="shoucang" id="shouChang">
+                            <p>
+                                <span><a href="#">品牌收藏(0)</a></span>
+                                <span><a href="#">商品收藏(0)</a></span>
+                                <span><a href="#">我的足迹(0)</a></span>
+                            </p>
+                        </div>
+                    </li>
+                    <span>/</span>
+                    <li class="vip-club">
+                        <a href="#">会员俱乐部</a>
+                        <div class="vip-club-nav" id="vipClubNav">
+                            <p>
+                                <span><a href="#">俱乐部首页</a></span>
+                                <span><a href="#">唯品币兑换</a></span>
+                                <span><a href="#">免费抽大奖</a></span>
+                            </p>
+                        </div>
+                    </li>
+                    <span>/</span>
+                    <li class="servce">
+                        <a href="#">客户服务</a>
+                        <div class="servce-nav" id="servceNav">
+                            <p>
+                                <span><a href="#">联系客服</a></span>
+                                <span><a href="#">帮助中心</a></span>
+                                <span><a href="#">服务中心</a></span>
+                                <span><a href="#">知识产权投诉</a></span>
+                            </p>
+                        </div>
+                    </li>
+                    <span>/</span>
+                    <li class="phone">
+                        <i></i>
+                        <a href="#">手机版</a>
+                        <div class="phone-nav" id="phoneNav">
+                            <div>
+                                <a href="#">
+                                    <img src="images/1466134037230.jpg" alt=""/>
+                                </a>
+                                <p>
+                                    <a href="#">随时逛 及时抢</a>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <span>/</span>
+                    <li class="more" id="navUlLiMore">
+                        <a href="#">更多&nbsp;<i>▽</i></a>
+                        <div class="more-list" id="moreList">
+                            <h5>合作专区</h5>
+                            <p class="ad">
+                                <a href="#">联名卡申请</a>
+                                <a href="#">唯品卡</a>
+                                <a href="#">支付专区</a>
+                            </p>
+                            <h5>关于我们</h5>
+                            <p>
+                                <a href="#">Sell on vip</a>
+                                <a href="#">品牌招商</a>
+                                <a href="#">官方博客</a>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="con w" id="headCon">
+            <h1><img src="image/14.png" /></h1>
+            <ul class="ad fr">
+                <li><img src="images/1466131264367.png" alt=""/></li>
+                <li><img src="images/1466131266290.png" alt=""/></li>
+                <li><img src="images/1466131268726.png" alt=""/></li>
+                <span class="line"></span>
+                <li class="bag fr" id="Bag">
+                    <p class="my-bag" id="myBag">
+                        <i><em>0</em></i>
+                        <span>我的购物袋</span>
+                    </p>
+                    <div class="bag-list" id="bagList">
+                        <span class="white-line"></span>
+                        <div class="bag-list-in">
+                            <p>好像还未登录！
+                                <a href="#">马上登录</a>
+                                查看购物袋吧！
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav" id="headNav">
+            <div class="w">
+                <ul class="first-ul">
+                    <li><a href="../唯品会首页/index.html">首页</a></li>
+                    <li><a href="../唯品会-唯品国际/weipinguoji.html">唯品国际</a></li>
+                    <li><a href="../唯品会-母婴/muying.html">母婴</a></li>
+                    <li><a href="../唯品会-家居家电/家居家电.html">家居家电</a></li>
+                </ul>
+                <ul class="second-ul">
+                    <li><a href="../唯品会-男士/男士.html">男士</a></li>
+                    <li><a href="../唯品会.美妆/美妆.html">美妆</a></li>
+                    <li><a href="../唯品会-生活/live.html">生活</a></li>
+                    <li><a href="../唯品会-金融/ws-html/money-index-00.html">金融</a></li>
+                    <li class="more"  id="morePic">
+                        更多 <i>▼</i>
+                        <div class="second-ul-more-pic">
+                            <div class="more-pic">
+                                <a href="#">
+                                <img src="images/111.jpg" alt=""/>
+                                <i class="show"></i>
+                                <p>女装</p>
+                            </a>
+                            </div>
+                            <div class="more-pic">
+                                <a href="#">
+                                    <img src="images/222.jpg" alt=""/>
+                                    <i class="show"></i>
+                                    <p>鞋包</p>
+                                </a>
+                            </div>
+                            <div class="more-pic">
+                                <a href="#">
+                                    <img src="images/333.jpg" alt=""/>
+                                    <i class="show"></i>
+                                    <p>配饰</p>
+                                </a>
+                            </div>
+                            <div class="more-pic">
+                                <a href="#">
+                                    <img src="images/444.jpg" alt=""/>
+                                    <i class="show"></i>
+                                    <p>运动</p>
+                                </a>
+                            </div>
+                            <div class="more-pic">
+                                <a href="#">
+                                    <img src="images/555.jpg" alt=""/>
+                                    <i class="show"></i>
+                                    <p>爱丽奢</p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ol class="fr">
+                    <li>
+                        <a href="#">
+                            <i></i>分类
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="second-i"></i>预告
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="zym-sidebar" id="zymSideBar">
+        <div class="sidebar-charge" id="sidebarCharge">
+            <i class="iconfont">&#xe64d;</i>
+            <span>帐号</span>
+            <div class="sidebar-charge-login" id="sidebarChargeLogin">
+                <img src="images/my_cnt_pic.jpg" alt=""/>
+                <p>
+                    你好 ! 请
+                    <a href="#">登录</a> |
+                    <a href="#">注册</a>
+                </p>
+                <div class="sidebar-charge-center">
+                    <a>
+                        <i class="iconfont">&#xe61f;</i>
+                        我的订单
+                    </a>
+                    <a>
+                        <i class="iconfont">&#xe605;</i>
+                        我的消息
+                    </a>
+                </div>
+                <a href="#" class="avip-club">会员俱乐部</a>
+                <span id="vipClubClose">×</span>
+            </div>
+        </div>
+        <div class="shop-bag" id="shopBag">
+            <i class="iconfont">&#xe64b;</i>
+            <p>购</p>
+            <p>物</p>
+            <p>袋</p>
+            <em>0</em>
+            <div class="shop-bag-in" id="shopBagIn">
+                <img src="images/my_cnt_pic.jpg" alt="" class=""/>
+                <p>
+                    你好 ! 请
+                    <a href="#">登录</a> |
+                    <a href="#">注册</a>
+                </p>
+                <span>×</span>
+            </div>
+        </div>
+        <div class="small-list" id="smallList">
+            <i class="iconfont">&#xe625;</i>
+            <p class="incon-in1">我的优惠券</p>
+            <i class="iconfont">&#xe601;</i>
+            <p class="incon-in2">品牌收藏</p>
+            <i class="iconfont">&#xe634;</i>
+            <p class="incon-in3">商品收藏</p>
+            <i class="iconfont">&#xe687;</i>
+            <p class="incon-in4">我的足迹</p>
+        </div>
+        <div class="bottom-list">
+            <div id="vipTick">
+                <i class="iconfont">&#xe681;</i>
+                <p class="incon-in5">会员反馈</p>
+            </div>
+            <div id="backTop">
+                <i class="iconfont">&#xe66c;</i>
+                <p class="incon-in6">返回顶部</p>
+            </div>
+        </div>
+
+    </div>
+    <!--main-->
+    <!--轮播图-->
+    <div class="lunbao-l" id="lunbao-l">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <!--小方块-->
+        <div class="lunbao-lie" >
+            <ol id="lunbao-lie">
+            </ol>
+        </div>
+        <!--小三角-->
+        <div id="arr">
+            <span id="left"><</span>
+            <span id="right">></span>
+        </div>
+    </div>
+    <!--轮播图   end-->
+    <!--热门分类-->
+    <div class="li-re">
+        <div class="w">
+            <img src="image/标题1.png" alt=""/>
+        </div>
+    </div>
+    <!--热门分类   end-->
+    <!--热门分类列表-->
+    <div class="liu-li">
+        <div class="w">
+            <div class="liu-left fl" id="liu-left">
+                <ul id="liu-ul">
+                    <li class="liu-tab current1 current2"><a href="javascipt:;">家纺布艺</a></li>
+                    <li class="liu-tab"><a href="javascipt:;">家居百货</a></li>
+                    <li class="liu-tab"><a href="javascipt:;">小家电</a></li>
+                    <li class="liu-tab"><a href="javascipt:;">3C数码</a></li>
+                    <li class="liu-tab"><a href="javascipt:;">大家电</a></li>
+                    <li class="liu-tab liu-bor"><a href="javascipt:;">家居家装</a></li>
+                </ul>
+            </div>
+            <div class="liu-banner fr">
+            <div class="liu-right selected">
+                <ul>
+                    <li>
+                        <a href="#"><img src="image/6.jpg" alt=""/></a>
+                        <p>床上套件</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="image/7.jpg" alt=""/></a>
+                        <p>保暖被芯</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="image/8.jpg" alt=""/></a>
+                        <p>舒适枕芯</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="image/9.jpg" alt=""/></a>
+                        <p>床垫</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="image/10.jpg" alt=""/></a>
+                        <p>毛毯</p>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <a href="#"><img src="image/11.jpg" alt=""/></a>
+                        <p>床用单品</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="image/23.jpg" alt=""/></a>
+                        <p>抱枕</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="image/12.jpg" alt=""/></a>
+                        <p>布艺家居</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="image/13.jpg" alt=""/></a>
+                        <p>毛巾浴巾</p>
+                    </li>
+                    <li class="liu-geng">
+                        <a href="#"><img src="image/22.png" alt=""/></a>
+                        <p>查看更多</p>
+                    </li>
+                </ul>
+
+            </div>
+            <!--添加-->
+                <div class="liu-right">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="image/liu-11.jpg" alt=""/></a>
+                            <p>路由器</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/liu-12.jpg" alt=""/></a>
+                            <p>耳机</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/liu-13.jpg" alt=""/></a>
+                            <p>充电宝</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/liu-14.jpg" alt=""/></a>
+                            <p>路由器</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/liu-15.jpg" alt=""/></a>
+                            <p>相机</p>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <a href="#"><img src="image/liu-16.jpg" alt=""/></a>
+                            <p>手机</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/liu-17.jpg" alt=""/></a>
+                            <p>电脑</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/liu-18.jpg" alt=""/></a>
+                            <p>平板</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/liu-19.jpg" alt=""/></a>
+                            <p>充电器</p>
+                        </li>
+                        <li class="liu-geng">
+                            <a href="#"><img src="image/22.png" alt=""/></a>
+                            <p>查看更多</p>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="liu-right">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="image/liu-1.jpg" alt=""/></a>
+                            <p>电饭锅</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/liu-2.jpg" alt=""/></a>
+                            <p>保温杯</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/liu-3.jpg" alt=""/></a>
+                            <p>搅拌机</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/liu-4.jpg" alt=""/></a>
+                            <p>平底锅</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/liu-5.jpg" alt=""/></a>
+                            <p>抽烟机</p>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <a href="#"><img src="image/liu-6.jpg" alt=""/></a>
+                            <p>保温杯</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/liu-7.jpg" alt=""/></a>
+                            <p>洗衣机</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/liu-8.jpg" alt=""/></a>
+                            <p>大保温杯</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/liu-9.jpg" alt=""/></a>
+                            <p>电饭锅</p>
+                        </li>
+                        <li class="liu-geng">
+                            <a href="#"><img src="image/22.png" alt=""/></a>
+                            <p>查看更多</p>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="liu-right">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="image/liu-11.jpg" alt=""/></a>
+                            <p>路由器</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/liu-12.jpg" alt=""/></a>
+                            <p>耳机</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/liu-13.jpg" alt=""/></a>
+                            <p>充电宝</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/liu-14.jpg" alt=""/></a>
+                            <p>路由器</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/liu-15.jpg" alt=""/></a>
+                            <p>相机</p>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <a href="#"><img src="image/liu-16.jpg" alt=""/></a>
+                            <p>手机</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/liu-17.jpg" alt=""/></a>
+                            <p>电脑</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/liu-18.jpg" alt=""/></a>
+                            <p>平板</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/liu-19.jpg" alt=""/></a>
+                            <p>充电器</p>
+                        </li>
+                        <li class="liu-geng">
+                            <a href="#"><img src="image/22.png" alt=""/></a>
+                            <p>查看更多</p>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="liu-right">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="image/liu-1.jpg" alt=""/></a>
+                            <p>电饭锅</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/liu-2.jpg" alt=""/></a>
+                            <p>保温杯</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/liu-3.jpg" alt=""/></a>
+                            <p>搅拌机</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/liu-4.jpg" alt=""/></a>
+                            <p>平底锅</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/liu-5.jpg" alt=""/></a>
+                            <p>抽烟机</p>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <a href="#"><img src="image/liu-6.jpg" alt=""/></a>
+                            <p>保温杯</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/liu-7.jpg" alt=""/></a>
+                            <p>洗衣机</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/liu-8.jpg" alt=""/></a>
+                            <p>大保温杯</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/liu-9.jpg" alt=""/></a>
+                            <p>电饭锅</p>
+                        </li>
+                        <li class="liu-geng">
+                            <a href="#"><img src="image/22.png" alt=""/></a>
+                            <p>查看更多</p>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="liu-right">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="image/6.jpg" alt=""/></a>
+                            <p>床上套件</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/7.jpg" alt=""/></a>
+                            <p>保暖被芯</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/8.jpg" alt=""/></a>
+                            <p>舒适枕芯</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/9.jpg" alt=""/></a>
+                            <p>床垫</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/10.jpg" alt=""/></a>
+                            <p>毛毯</p>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <a href="#"><img src="image/11.jpg" alt=""/></a>
+                            <p>床用单品</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/23.jpg" alt=""/></a>
+                            <p>抱枕</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/12.jpg" alt=""/></a>
+                            <p>布艺家居</p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="image/13.jpg" alt=""/></a>
+                            <p>毛巾浴巾</p>
+                        </li>
+                        <li class="liu-geng">
+                            <a href="#"><img src="image/22.png" alt=""/></a>
+                            <p>查看更多</p>
+                        </li>
+                    </ul>
+
+                </div>
+            <!--添加 end-->
+            </div>
+        </div>
+    </div>
+
+    <!--热门分类列表  end-->
+    <!--今日促销-->
+    <div class="liu-jin">
+        <div class="w">
+            <img src="image/标题2.png" alt=""/>
+        </div>
+    </div>
+    <!--今日促销  end-->
+    <div class="liu-tup">
+        <div class="w">
+            <div class="liu-tup1 fl">
+               <div class="liu-huan1">
+                   <img src="image/liu-500.jpg" alt=""/>
+               </div>
+                <div class="liu-huan slect">
+                    <img src="image/18.jpg" alt=""/>
+                </div>
+            </div>
+            <div class="liu-tup2 fr">
+                <div class="liu-dong1">
+                    <img src="image/17.jpg" alt=""/>
+                </div>
+                <div class="liu-dong sel">
+                    <img src="image/liu-400.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--新特卖-->
+    <div class="liu-xin">
+        <div class="w">
+            <img src="image/标题20.png" alt=""/>
+        </div>
+    </div>
+
+    <!--新特卖   end-->
+    <!--新特卖列表-->
+    <div class="liu-main w clearfix">
+        <div class="main-top" id="main-top">
+            <ul>
+                <li class="fl" id="liu-m">
+                    <a href="#"><img src="image/28.jpg" alt=""/></a>
+                    <div class="liu-reu" id="liu-reu">
+                        <span class="reu"></span>
+                        <span class="reu1">满498减100，上不封顶</span>
+                        <span class="reu3" id="reu3">
+                            <i>❤ 收藏品牌</i>
+                        </span>
+                    </div>
+                    <div class="liu-span">
+                          <span class="liu-brand"><span class="zhe">1.3</span>
+                            折起</span>
+                        <span class="brand-name" title="罗莱集团清仓专场">罗莱集团清仓专场</span>
+                        <span class="liu-brand1"><img src="image/xiao2.png" alt=""/></span>
+                        <span class="liu-brand2">剩4天</span>
+                    </div>
+                </li>
+                <li class="fr" id="liu-m1">
+                    <a href="#"><img src="image/26.jpg" alt=""/></a>
+                    <span class="reu4" id="reu4">
+                            <i>❤ 收藏品牌</i>
+                    </span>
+                    <div class="liu-span">
+                        <span class="liu-brand"><span class="zhe">4</span>
+                            折起</span>
+                        <span class="brand-name" title="惠人Hurom原汁机专场">惠人Hurom原汁机专场</span>
+                        <span class="liu-brand1"><img src="image/xiao2.png" alt=""/></span>
+                        <span class="liu-brand2">剩4天</span>
+                    </div>
+                </li>
+            </ul>
+            <ul id="liu-animate">
+                <li class="liu-an1 fl">
+                    <a href="#"><img src="image/24.jpg" alt="" class="liu-an2"/></a>
+                    <!--遮罩层-->
+                    <div id="liu_mask" class="liu-mask"></div>
+                    <!--遮罩层 end-->
+                    <!--内容-->
+                    <div class="mask-cont" id="mask-cont">
+                        <div class="mask-cont1">
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="image/6.jpg" alt=""/></a>
+                                    <p>￥1200</p>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="image/7.jpg" alt=""/></a>
+                                    <p>￥100</p>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="image/9.jpg" alt=""/></a>
+                                    <p>￥2000</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mask-cont2">
+                            <span class="reu5 fl" id="reu5">
+                               <i>❤ 收藏品牌</i>
+                            </span>
+                            <span class="reu6 fr" id="reu6">
+                                <i>进入专场</i>
+                            </span>
+                        </div>
+                    </div>
+                    <!--内容  end-->
+                    <div class="liu-span">
+                        <span class="liu-brand"><span class="zhe">0.7</span>
+                            折起</span>
+                        <span class="brand-name" title="意大利甄选-梦洁家纺">意大利甄选-梦洁家纺</span>
+                        <span class="liu-brand1"><img src="image/xiao2.png" alt=""/></span>
+                        <span class="liu-brand2">剩3天</span>
+                    </div>
+                </li>
+                <li class="fr">
+                    <a href="#"><img src="image/33.jpg" alt=""/></a>
+                    <div class="liu-span">
+                        <span class="liu-brand"><span class="zhe">1.2</span>
+                            折起</span>
+                        <span class="brand-name" title="艾维家纺特惠专场">艾维家纺特惠专场</span>
+                        <span class="liu-brand1"><img src="image/xiao2.png" alt=""/></span>
+                        <span class="liu-brand2">剩4天</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--新特卖列表  end-->
+    <!--main  end-->
+    <div class="foot">
+        <div class="w1">
+            <div class="foot-pic">
+                <ul>
+                    <li>
+                        <i>正品采购</i>
+                    </li>
+                    <li>
+                        <i>正品保险</i>
+                    </li>
+                    <li>
+                        <i>美国上市</i>
+                    </li>
+                    <li>
+                        <i>专业配送</i>
+                    </li>
+                    <li>
+                        <i>金牌服务</i>
+                    </li>
+                    <li>
+                        <i>万千信赖</i>
+                    </li>
+                    <li>
+                        <i>权威荣誉</i>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="foot-service" id="footService">
+                <dl>
+                    <dt>服务保障</dt>
+                    <dd><i></i><a href="#">正品保证</a></dd>
+                    <dd><i></i><a href="#">7天无理由放心退</a></dd>
+                    <dd><i></i><a href="#">退货返运费</a></dd>
+                    <dd><i></i><a href="#">7x15小时客户服务</a></dd>
+                </dl>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><i></i><a href="#">导购演示</a></dd>
+                    <dd><i></i><a href="#">订单操作</a></dd>
+                    <dd><i></i><a href="#">会员注册</a></dd>
+                    <dd><i></i><a href="#">账户管理</a></dd>
+                    <dd><i></i><a href="#">收货样品</a></dd>
+                    <dd><i></i><a href="#">会员等级</a></dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd><i></i><a href="#">快捷支付</a></dd>
+                    <dd><i></i><a href="#">23家主流网银支付</a></dd>
+                    <dd><i></i><a href="#">货到付款</a></dd>
+                    <dd><i></i><a href="#">支付宝、银联等支付</a></dd>
+                    <dd><i></i><a href="#">信用卡支付</a></dd>
+                    <dd><i></i><a href="#">零钱支付</a></dd>
+                </dl>
+                <dl>
+                    <dt>配送方式</dt>
+                    <dd><i></i><a href="#">全场满288元免运费</a></dd>
+                    <dd><i></i><a href="#">配送范围及运费</a></dd>
+                    <dd><i></i><a href="#">验货与签收</a></dd>
+                </dl>
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd><i></i><a href="#">退货政策</a></dd>
+                    <dd><i></i><a href="#">退货流程</a></dd>
+                    <dd><i></i><a href="#">退款方式和时效</a></dd>
+                </dl>
+
+                <div class="erweicode fl">
+                    <p>唯品会APP二维码</p>
+                    <img src="images/1466134037230.jpg" alt=""/>
+                    <p>下载唯品会移动APP</p>
+                </div>
+            </div>
+            <div class="about-us">
+                <div class="foot-nav">
+                    <a href="#">关于我们</a>
+                    <span>|</span>
+                    <a href="#">About us</a>
+                    <span>|</span>
+                    <a href="#">Investor Relations</a>
+                    <span>|</span>
+                    <a href="#">媒体报道</a>
+                    <span>|</span>
+                    <a href="#">品牌招商</a>
+                    <span>|</span>
+                    <a href="#">隐私条款</a>
+                    <span>|</span>
+                    <a href="#">唯品诚聘</a>
+                    <span>|</span>
+                    <a href="#">365爱心基金</a>
+                    <span>|</span>
+                    <a href="#">唯品卡</a>
+                    <span>|</span>
+                    <a href="#">唯品地图</a>
+                    <span>|</span>
+                    <a href="#">品牌大全</a>
+                    <span>|</span>
+                    <a href="#">联系我们</a>
+                </div>
+                <div class="copyright">
+                    <p>
+                        Copyright ? 2008-2017 vip.com，All Rights Reserved  使用本网站即表示接受 <a href="#">唯品会用户协议</a>。版权所有 <a
+                            href="#">广州唯品会信息科技有限公司</a>
+                    </p>
+                    <p>
+                        <a href="#">粤公网安备 44010302111111号</a>
+                        <a href="#">粤ICP备08114786号</a>
+                        <a href="#">ICP经营许可证：粤B2-20080329 </a>
+                        <a href="#">网络文化经营许可证：粤网文〔2015〕1528-229
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#">自营主体的营业执照及食品流通许可证</a>
+                        <a href="#">信息互联网药品交易服务资格证（粤C20140002）</a>
+                    </p>
+                    <div class="copyright-pic">
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

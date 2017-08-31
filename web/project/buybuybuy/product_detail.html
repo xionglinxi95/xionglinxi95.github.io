@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>比价搜索</title>
+     <link rel="stylesheet" href="source/bootstrap/css/bootstrap.css">
+     <link rel="stylesheet" href="css/product_detail.css">
+</head>
+<body>
+    <!--头部-->
+    <header id="header">
+        <a href="index.html" class="logo">
+            <img src="images/header_logo.png" alt="">    
+       </a>
+        <a href="index.html" class="download_app">
+            <img src="images/header_app.png" alt="">    
+       </a>
+    </header>
+    <!--搜索-->
+    <section id="search">
+        <form action="">
+            <input type="search" name="search" placeholder="请输入你想要输入的商品" value="">
+            <a href="" class="btn btn-default">搜索</a>
+        </form>
+    </section>
+    <!--数据列表-->
+    <nav id="detail">
+        <ol class="breadcrumb">
+          <li><a href="start.html">首页</a></li>
+          <!-- <li><a href="detail.html">全部分类</a></li> -->
+          <!-- <li>电视</li> -->
+        </ol>
+        <a href="#" class="btn btn-default">筛选</a>
+    </nav>
+
+    <!-- 主题部分 -->
+    <main id="main_body">
+      <div class="photo">
+        <!-- <h4>乐视TV(Letv)S50 Air全配版2D 50英寸 全高清LED液晶电视</h4>
+        <div class="img"><img src="images/ic_cu.png" alt="..."></div>
+        <div class="collect"><a href="#">收藏</a></div> -->
+      </div>    
+    </main>
+
+    <section id="compare">
+        <div class="row">
+            <div class="col-xs-4"><a href="">比较购买</a></div>
+            <div class="col-xs-4"><a href="">产品参数</a></div>
+            <div class="col-xs-4" id="morediscussmore"><a href="#discuss">评价</a></div>
+        </div>
+    </section>
+    <section id="sec">
+       <div> <span class="big">京东商城</span> <span class="red"><strong>￥1999</strong>&nbsp;&nbsp;<a href="" class="btn btn-default">去购买</a></span> </div>
+       <p> *实降价格以个网站列出的实时销售为主。我们提供的价格可能有数小时至数日的延迟</p>
+    </section>
+  
+    <section id="discuss">
+        <div class="header">网友评价</div>
+      <!--   <div class="namediv"><span class="nameid">lala</span><span class="timeid">2016/10/1</span></div>
+        <div class="buywhere"><span>购买自：京东商城</span></div>
+        <p class="write">使用一周、。。。。</p>     -->
+    </section>
+
+    <div id='moreDiscuss'> <a href="#moreDiscuss" class="btn btn-default">查看更多评价</a></div>
+
+
+   <!--页脚-->
+    <footer id="footer">
+        <div class="row">
+            <div class="col-xs-4"><a href="">登录</a></div>
+            <div class="col-xs-4"><a href="">注册</a></div>
+            <div class="col-xs-4"><img  class="arrows" src="images/arrow1.gif" alt="...">返回顶部</div>
+        </div>
+        <div class="">
+          <a href="#">手机APP下载</a>
+          <span>慢慢买手机版</span>
+          <span> -- 掌上比价平台</span>
+          <p> m.manmanbuy.com</p>
+        </div>
+    </footer>
+  
+    <script type="text/template" id="product_id">
+      {{each result as item index}}
+        <li><a href="detail.html?categoryid={{item.categoryId}}">{{item.category}}</a></li>
+      {{/each}}
+    </script>
+    <script type="text/template" id="product_name">
+      {{each result as item index}}
+        <li>{{item.productName}}</a></li>
+      {{/each}}
+    </script>
+
+    <script type="text/template" id="product_img">
+      {{each result as item index}}
+        <h4>{{item.productName}}</h4>
+        <div class="img">{{#item.productImg}}</div>
+        <div class="collect"><a href="#">收藏</a></div>
+      {{/each}}
+    </script>
+
+    <script type="text/template" id='discussmy'>
+      {{each result as item index}}
+        <!-- <div class="header">网友评价</div> -->
+        <div class="namediv"><span class="nameid">{{item.comName}}</span><span class="timeid">{{item.comTime}}</span></div>
+        <div class="buywhere"><span>{{item.comFrom}}</span></div>
+        <p class="write">{{item.comContent}}</p>    
+      {{/each}}
+    </script>
+
+    <script src="source/jquery/jquery.js"></script>
+    <script src="source/bootstrap/js/bootstrap.js"></script>
+    <script src="source/artTemplate/template.js"></script>
+    <script src="js/url.js"></script>
+    <script src="js/product_detail.js"></script>
+</body>
+</html>

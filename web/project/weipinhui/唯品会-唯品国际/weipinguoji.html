@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>唯品会-唯品国际</title>
+    <link rel="icon" href="favicon_eef1309.ico"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/head.css"/>
+    <link rel="stylesheet" href="css/foot.css"/>
+    <link rel="stylesheet" href="css/iconfont/iconfont.css" />
+    <link rel="stylesheet" href="css/iconfont1/iconfont.css" />
+    <link rel="stylesheet" href="css/guoji.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/foot.css"/>
+    <!--工具包-->
+    <script src="js/jquery-1.11.1-min.js"></script>
+    <script src="js/jquery-1.12.4.js"></script>
+    <!--功能包-->
+    <script src="js/head.js"></script>
+    <script src = "js/foot.js"></script>
+    <script src="js/guoji.js"></script>
+    <script src = "js/foot.js"></script>
+    <script src = "js/lunbo.js"></script>
+    <script src="js/lunbo-1.js"></script>
+</head>
+<body>
+    <div class="zym-head">
+        <div class="top" id="headTop">
+            <div class="w">
+                <div id="cityBox" class="city-box">
+                <div class="city fl">北京 <i>▼</i></div>
+                <table id="cityList" class="city-list">
+                    <tbody>
+                    <tr>
+                        <td><p>请选择所在的收获地址</p></td>
+                    </tr>
+                    <tr>
+                        <th>A</th>
+                        <td>
+                            <span>安徽</span>
+                            <span>澳门</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>B</th>
+                        <td>
+                            <span>北京</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>C</th>
+                        <td>
+                            <span>重庆</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>F</th>
+                        <td>
+                            <span>福建</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>G</th>
+                        <td>
+                            <span>广东</span>
+                            <span>广西</span>
+                            <span>贵州</span>
+                            <span>甘肃</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>H</th>
+                        <td>
+                            <span>河北</span>
+                            <span>河南</span>
+                            <span>黑龙江</span>
+                            <span>海南</span>
+                            <span>湖北</span>
+                            <span>湖南</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>J</th>
+                        <td>
+                            <span>江苏</span>
+                            <span>吉林</span>
+                            <span>江西</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>L</th>
+                        <td>
+                            <span>辽宁</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>N</th>
+                        <td>
+                            <span>内蒙古</span>
+                            <span>宁夏</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Q</th>
+                        <td>
+                            <span>青海</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>S</th>
+                        <td>
+                            <span>上海</span>
+                            <span>山东</span>
+                            <span>山西</span>
+                            <span>四川</span>
+                            <span>陕西</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>T</th>
+                        <td>
+                            <span>台湾</span>
+                            <span>天津</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>X</th>
+                        <td>
+                            <span>西藏</span>
+                            <span>香港</span>
+                            <span>新疆</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Y</th>
+                        <td>
+                            <span>云南</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Z</th>
+                        <td>
+                            <span>浙江</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                </div>
+                <ul class="fr" id="navUl">
+                    <li>
+                        <a href="#">请登录</a>
+                        <div class="user-info" id="userInfo">
+                            <div class="user-info-top">
+                                <span class="pic"></span>
+                                <p>
+                                    <a href="#">你好!&nbsp;&nbsp;[ 请登录 ]</a>
+                                </p>
+                            </div>
+                            <div class="user-info-list" id="userInFolist">
+                                <span><a href="#">我的收藏</a></span>
+                                <span><a href="#">我的订单</a></span>
+                                <span><a href="#">零钱</a></span>
+                                <span><a href="#">我的优惠券</a></span>
+                                <span><a href="#">我的唯品币</a></span>
+                                <span><a href="#">唯品金融</a></span>
+                            </div>
+                        </div>
+                    </li>
+                    <span>/</span>
+                    <li><a href="#">注册</a></li>
+                    <span>/</span>
+                    <li><a href="#">我的订单</a></li>
+                    <span>/</span>
+                    <li class="temai">
+                        <a href="#">我的特卖</a>
+                        <div class="shoucang" id="shouChang">
+                            <p>
+                                <span><a href="#">品牌收藏(0)</a></span>
+                                <span><a href="#">商品收藏(0)</a></span>
+                                <span><a href="#">我的足迹(0)</a></span>
+                            </p>
+                        </div>
+                    </li>
+                    <span>/</span>
+                    <li class="vip-club">
+                        <a href="#">会员俱乐部</a>
+                        <div class="vip-club-nav" id="vipClubNav">
+                            <p>
+                                <span><a href="#">俱乐部首页</a></span>
+                                <span><a href="#">唯品币兑换</a></span>
+                                <span><a href="#">免费抽大奖</a></span>
+                            </p>
+                        </div>
+                    </li>
+                    <span>/</span>
+                    <li class="servce">
+                        <a href="#">客户服务</a>
+                        <div class="servce-nav" id="servceNav">
+                            <p>
+                                <span><a href="#">联系客服</a></span>
+                                <span><a href="#">帮助中心</a></span>
+                                <span><a href="#">服务中心</a></span>
+                                <span><a href="#">知识产权投诉</a></span>
+                            </p>
+                        </div>
+                    </li>
+                    <span>/</span>
+                    <li class="phone">
+                        <i></i>
+                        <a href="#">手机版</a>
+                        <div class="phone-nav" id="phoneNav">
+                            <div>
+                                <a href="#">
+                                    <img src="images/1466134037230.jpg" alt=""/>
+                                </a>
+                                <p>
+                                    <a href="#">随时逛 及时抢</a>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <span>/</span>
+                    <li class="more" id="navUlLiMore">
+                        <a href="#">更多&nbsp;<i>▽</i></a>
+                        <div class="more-list" id="moreList">
+                            <h5>合作专区</h5>
+                            <p class="ad">
+                                <a href="#">联名卡申请</a>
+                                <a href="#">唯品卡</a>
+                                <a href="#">支付专区</a>
+                            </p>
+                            <h5>关于我们</h5>
+                            <p>
+                                <a href="#">Sell on vip</a>
+                                <a href="#">品牌招商</a>
+                                <a href="#">官方博客</a>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="con w" id="headCon">
+            <h1><img src="images/logo.png" /></h1>
+            <ul class="ad fr">
+                <li><img src="images/1466131264367.png" alt=""/></li>
+                <li><img src="images/1466131266290.png" alt=""/></li>
+                <li><img src="images/1466131268726.png" alt=""/></li>
+                <span class="line"></span>
+                <li class="bag fr" id="Bag">
+                    <p class="my-bag" id="myBag">
+                        <i><em>0</em></i>
+                        <span>我的购物袋</span>
+                    </p>
+                    <div class="bag-list" id="bagList">
+                        <span class="white-line"></span>
+                        <div class="bag-list-in">
+                            <p>好像还未登录！
+                                <a href="#">马上登录</a>
+                                查看购物袋吧！
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav" id="headNav">
+            <div class="w">
+                <ul class="first-ul">
+                    <li><a href="../唯品会首页/index.html">首页</a></li>
+                    <li><a href="../唯品会-唯品国际/weipinguoji.html">唯品国际</a></li>
+                    <li><a href="../唯品会-母婴/muying.html">母婴</a></li>
+                    <li><a href="../唯品会-家居家电/家居家电.html">家居家电</a></li>
+                </ul>
+                <ul class="second-ul">
+                    <li><a href="../唯品会-男士/男士.html">男士</a></li>
+                    <li><a href="../唯品会.美妆/美妆.html">美妆</a></li>
+                    <li><a href="../唯品会-生活/live.html">生活</a></li>
+                    <li><a href="../唯品会-金融/ws-html/money-index-00.html">金融</a></li>
+                    <li class="more"  id="morePic">
+                        更多 <i>▼</i>
+                        <div class="second-ul-more-pic">
+                            <div class="more-pic">
+                                <a href="#">
+                                <img src="images/111.jpg" alt=""/>
+                                <i class="show"></i>
+                                <p>女装</p>
+                            </a>
+                            </div>
+                            <div class="more-pic">
+                                <a href="#">
+                                    <img src="images/222.jpg" alt=""/>
+                                    <i class="show"></i>
+                                    <p>鞋包</p>
+                                </a>
+                            </div>
+                            <div class="more-pic">
+                                <a href="#">
+                                    <img src="images/333.jpg" alt=""/>
+                                    <i class="show"></i>
+                                    <p>配饰</p>
+                                </a>
+                            </div>
+                            <div class="more-pic">
+                                <a href="#">
+                                    <img src="images/444.jpg" alt=""/>
+                                    <i class="show"></i>
+                                    <p>运动</p>
+                                </a>
+                            </div>
+                            <div class="more-pic">
+                                <a href="#">
+                                    <img src="images/555.jpg" alt=""/>
+                                    <i class="show"></i>
+                                    <p>爱丽奢</p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ol class="fr">
+                    <li>
+                        <a href="#">
+                            <i></i>分类
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="second-i"></i>预告
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="zym-sidebar" id="zymSideBar">
+        <div class="sidebar-charge" id="sidebarCharge">
+            <i class="iconfont">&#xe64d;</i>
+            <span>帐号</span>
+            <div class="sidebar-charge-login" id="sidebarChargeLogin">
+                <img src="images/my_cnt_pic.jpg" alt=""/>
+                <p>
+                    你好 ! 请
+                    <a href="#">登录</a> |
+                    <a href="#">注册</a>
+                </p>
+                <div class="sidebar-charge-center">
+                    <a>
+                        <i class="iconfont">&#xe61f;</i>
+                        我的订单
+                    </a>
+                    <a>
+                        <i class="iconfont">&#xe605;</i>
+                        我的订单
+                    </a>
+                </div>
+                <a href="#" class="avip-club">会员俱乐部</a>
+                <span id="vipClubClose">×</span>
+            </div>
+        </div>
+        <div class="shop-bag" id="shopBag">
+            <i class="iconfont">&#xe64b;</i>
+            <p>购</p>
+            <p>物</p>
+            <p>袋</p>
+            <em>0</em>
+            <div class="shop-bag-in" id="shopBagIn">
+                <img src="images/my_cnt_pic.jpg" alt="" class=""/>
+                <p>
+                    你好 ! 请
+                    <a href="#">登录</a> |
+                    <a href="#">注册</a>
+                </p>
+                <span>×</span>
+            </div>
+        </div>
+        <div class="small-list" id="smallList">
+            <i class="iconfont">&#xe625;</i>
+            <p class="incon-in1">我的优惠券</p>
+            <i class="iconfont">&#xe601;</i>
+            <p class="incon-in2">品牌收藏</p>
+            <i class="iconfont">&#xe634;</i>
+            <p class="incon-in3">商品收藏</p>
+            <i class="iconfont">&#xe687;</i>
+            <p class="incon-in4">我的足迹</p>
+        </div>
+        <div class="bottom-list">
+            <div id="vipTick">
+                <i class="iconfont">&#xe681;</i>
+                <p class="incon-in5">会员反馈</p>
+            </div>
+            <div id="backTop">
+                <i class="iconfont">&#xe66c;</i>
+                <p class="incon-in6">返回顶部</p>
+            </div>
+        </div>
+
+    </div>
+
+
+<!--国际部分-->
+
+    <!--banner图-->
+    <div><a href="#"><img src="images/banner.jpg" width=100%/></a></div>
+    <!--国家导航图-->
+    <div class="guojia" id="guojia">
+        <ul>
+            <li><a href="#"><img src="images/dht01.jpg"width="200px"/></a></li>
+            <li><a href="#"><img src="images/dht02.jpg"width="200px"/></a></li>
+            <li><a href="#"><img src="images/dht03.jpg"width="200px"/></a></li>
+            <li><a href="#"><img src="images/dht04.jpg"width="200px"/></a></li>
+            <li><a href="#"><img src="images/dht05.jpg"width="200px"/></a></li>
+        </ul>
+    </div>
+
+
+
+    <!--宣传展示模块-->
+    <div class="zhanshi">
+        <div class="zs-w">
+            <!--<p>热门话题 世界都在谈什么<br/>HOT TOPIC</p>-->
+            <img src="images/bt01.jpg" alt=""/>
+        </div>
+        <div class="zs-n">
+            <ul>
+                <li class="zs-l"><a href="#"><img src="images/bn01.jpg" alt=""/><p>4招解救春季小问题<br/>这些春天里的小尴尬,你都有么?</p></a></li>
+                <li class="zs-r"><a href="#"><img src="images/bn02.jpg" alt=""/><p>春夏瘦身总动员<br/>露肉季节 瘦就一个字</p></a></li>
+                <li class="zs-l"><a href="#"><img src="images/bn03.jpg" alt=""/><p>欢迎光临不发胖的深夜食堂<br/>好吃低热量 没有罪恶感</p></a></li>
+                <li class="zs-r"><a href="#"><img src="images/bn04.jpg" alt=""/><p>环球母婴加油站<br/>养娃不用愁 靠ta们解放双手</p></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!--轮播一区-->
+    <div class="tuijian" id="all">
+        <div class="bt">
+            <img src="images/bt02.jpg" alt=""/>
+        </div>
+
+        <div class="luobo clear" id="screen">
+            <div id="arr">
+                <span id="left"><</span>
+                <span id="right">></span>
+            </div>
+            <ul class="luobo-n clear" id="ul">
+                <li>
+                    <a href="#">
+                        <img src="images/lb01.jpg" width="180px">
+                        <p>推荐度:★★★★★<br/>SNP海洋燕窝精华面膜</p>
+                    </a>
+                    <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>89</span>
+								</span>
+                        <del class="oldPrice">¥219</del>
+                    </p>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/lb02.jpg" width="180px">
+                        <span class="shadow"></span>
+                        <p>推荐度:★★★★★<br/>SNP海洋燕窝精华面膜</p>
+                    </a>
+                    <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>128</span>
+								</span>
+                        <del class="oldPrice">¥299</del>
+                    </p>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/lb03.jpg" width="180px">
+                        <span class="shadow"></span>
+                        <p>推荐度:★★★★★<br/>SNP海洋燕窝精华面膜</p>
+                    </a>
+                    <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>88</span>
+								</span>
+                        <del class="oldPrice">¥257</del>
+                    </p>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/lb04.jpg" width="180px">
+                        <span class="shadow"></span>
+                        <p>推荐度:★★★★★<br/>SNP海洋燕窝精华面膜</p>
+                    </a>
+                    <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>109</span>
+								</span>
+                        <del class="oldPrice">¥298</del>
+                    </p>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/lb05.jpg" width="180px">
+                        <span class="shadow"></span>
+                        <p>推荐度:★★★★★<br/>SNP海洋燕窝精华面膜</p>
+                    </a>
+                    <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>203</span>
+								</span>
+                        <del class="oldPrice">¥980</del>
+                    </p>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="images/lb06.jpg" width="180px">
+                        <p>推荐度:★★★★★<br/>SNP海洋燕窝精华面膜</p>
+                    </a>
+                    <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>89</span>
+								</span>
+                        <del class="oldPrice">¥219</del>
+                    </p>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/lb07.jpg" width="180px">
+                        <span class="shadow"></span>
+                        <p>推荐度:★★★★★<br/>SNP海洋燕窝精华面膜</p>
+                    </a>
+                    <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>128</span>
+								</span>
+                        <del class="oldPrice">¥299</del>
+                    </p>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/lb08.jpg" width="180px">
+                        <span class="shadow"></span>
+                        <p>推荐度:★★★★★<br/>SNP海洋燕窝精华面膜</p>
+                    </a>
+                    <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>88</span>
+								</span>
+                        <del class="oldPrice">¥257</del>
+                    </p>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/lb09.jpg" width="180px">
+                        <span class="shadow"></span>
+                        <p>推荐度:★★★★★<br/>SNP海洋燕窝精华面膜</p>
+                    </a>
+                    <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>109</span>
+								</span>
+                        <del class="oldPrice">¥298</del>
+                    </p>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/lb10.jpg" width="180px">
+                        <span class="shadow"></span>
+                        <p>推荐度:★★★★★<br/>SNP海洋燕窝精华面膜</p>
+                    </a>
+                    <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>203</span>
+								</span>
+                        <del class="oldPrice">¥980</del>
+                    </p>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="images/lb01.jpg" width="180px">
+                        <p>推荐度:★★★★★<br/>SNP海洋燕窝精华面膜</p>
+                    </a>
+                    <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>89</span>
+								</span>
+                        <del class="oldPrice">¥219</del>
+                    </p>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/lb02.jpg" width="180px">
+                        <span class="shadow"></span>
+                        <p>推荐度:★★★★★<br/>SNP海洋燕窝精华面膜</p>
+                    </a>
+                    <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>128</span>
+								</span>
+                        <del class="oldPrice">¥299</del>
+                    </p>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/lb03.jpg" width="180px">
+                        <span class="shadow"></span>
+                        <p>推荐度:★★★★★<br/>SNP海洋燕窝精华面膜</p>
+                    </a>
+                    <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>88</span>
+								</span>
+                        <del class="oldPrice">¥257</del>
+                    </p>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/lb04.jpg" width="180px">
+                        <span class="shadow"></span>
+                        <p>推荐度:★★★★★<br/>SNP海洋燕窝精华面膜</p>
+                    </a>
+                    <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>109</span>
+								</span>
+                        <del class="oldPrice">¥298</del>
+                    </p>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/lb05.jpg" width="180px">
+                        <span class="shadow"></span>
+                        <p>推荐度:★★★★★<br/>SNP海洋燕窝精华面膜</p>
+                    </a>
+                    <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>203</span>
+								</span>
+                        <del class="oldPrice">¥980</del>
+                    </p>
+                </li>
+            </ul>
+            <!--左右小三角-->
+            <!--<div class="jt" id="arr">-->
+            <!--<span class="z" id="left"><img src="images/lb-dz01%20.png" alt=""/></span>-->
+            <!--<span class="y" id="right"><img src="images/lb-dy02.png" alt=""/></span>-->
+            <!--</div>-->
+            <!--左右小三角-->
+
+        </div>
+
+
+    </div>
+
+    <!--展示一区-->
+    <div class="zhanshi-yi">
+        <div class="zs-top">
+            <p>美容彩妆</p>
+            <ul>
+                <li><a href="#">面膜</a></li>
+                <li>|</li>
+                <li><a href="#">水乳面膜</a></li>
+                <li>|</li>
+                <li><a href="#">卸妆洁面</a></li>
+                <li>|</li>
+                <li><a href="#">彩妆香水</a></li>
+                <li>|</li>
+                <li><a href="#">防晒</a></li>
+                <li>|</li>
+                <li><a href="#">沐浴身体</a></li>
+                <li class="zs-r"><a href="#">洗护染发></a></li>
+            </ul>
+        </div>
+        <div class="zs-n">
+            <div class="zs-l" id="zs-l">
+                <div class="zs-s">
+                    <ul>
+                        <li class="zs-s-l">
+
+                            <img src="images/zs-1-1.jpg" width="200px" />
+
+                        </li>
+                        <li class="zs-s-li"><a href="#">立即进入</a></li>
+                        <li class="zs-s-r">
+                            <a href="#">
+                                <img src="images/zs01.jpg"  height="240px"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="zs-x" id="showy">
+                    <li id="zsy">
+                        <span id="ly"><</span>
+                        <span id="ry">></span>
+                    </li>
+                    <ul id="showny">
+
+
+                        <li>
+                            <a href="#">
+                                <img src="images/zs-1-01.jpg" width="200px">
+                                <p>美妆仙mise-en-scene损伤护理精油70ml</p>
+                            </a>
+                            <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>89</span>
+								</span>
+                                <del class="oldPrice">¥219</del>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/zs-1-02.jpg" width="200px">
+                                <p>美妆仙mise-en-scene损伤护理精油70ml</p>
+                            </a>
+                            <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>89</span>
+								</span>
+                                <del class="oldPrice">¥219</del>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/zs-1-03.jpg" width="200px">
+                                <p>美妆仙mise-en-scene损伤护理精油70ml</p>
+                            </a>
+                            <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>89</span>
+								</span>
+                                <del class="oldPrice">¥219</del>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/zs-1-04.jpg" width="200px">
+                                <p>美妆仙mise-en-scene损伤护理精油70ml</p>
+                            </a>
+                            <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>89</span>
+								</span>
+                                <del class="oldPrice">¥219</del>
+                            </p>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="images/zs-1-06.jpg" width="200px">
+                                <p>美妆仙mise-en-scene损伤护理精油70ml</p>
+                            </a>
+                            <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>89</span>
+								</span>
+                                <del class="oldPrice">¥219</del>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/zs-1-07.jpg" width="200px">
+                                <p>美妆仙mise-en-scene损伤护理精油70ml</p>
+                            </a>
+                            <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>89</span>
+								</span>
+                                <del class="oldPrice">¥219</del>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/zs-1-08.jpg" width="200px">
+                                <p>美妆仙mise-en-scene损伤护理精油70ml</p>
+                            </a>
+                            <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>89</span>
+								</span>
+                                <del class="oldPrice">¥219</del>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/zs-1-09.jpg" width="200px">
+                                <p>美妆仙mise-en-scene损伤护理精油70ml</p>
+                            </a>
+                            <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>89</span>
+								</span>
+                                <del class="oldPrice">¥219</del>
+                            </p>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="images/zs-1-01.jpg" width="200px">
+                                <p>美妆仙mise-en-scene损伤护理精油70ml</p>
+                            </a>
+                            <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>89</span>
+								</span>
+                                <del class="oldPrice">¥219</del>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/zs-1-02.jpg" width="200px">
+                                <p>美妆仙mise-en-scene损伤护理精油70ml</p>
+                            </a>
+                            <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>89</span>
+								</span>
+                                <del class="oldPrice">¥219</del>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/zs-1-03.jpg" width="200px">
+                                <p>美妆仙mise-en-scene损伤护理精油70ml</p>
+                            </a>
+                            <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>89</span>
+								</span>
+                                <del class="oldPrice">¥219</del>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/zs-1-04.jpg" width="200px">
+                                <p>美妆仙mise-en-scene损伤护理精油70ml</p>
+                            </a>
+                            <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>89</span>
+								</span>
+                                <del class="oldPrice">¥219</del>
+                            </p>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="zs-r">
+                <ul>
+                    <span>热门品牌</span>
+                    <li><a href="#"><img src="images/zs-r-1.jpg" width="160" /><p>就是这么天然自信</p></a></li>
+                    <li><a href="#"><img src="images/zs-r-2.jpg" width="160" /><p>就是这么天然自信</p></a></li>
+                    <li><a href="#"><img src="images/zs-r-3.jpg" width="160" /><p>就是这么天然自信</p></a></li>
+                    <li><a href="#"><img src="images/zs-r-4.jpg" width="160" /><p>就是这么天然自信</p></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--展示二区-->
+    <div class="zhanshi-er">
+        <div class="zs-top">
+            <p>妇婴专区</p>
+            <ul>
+                <li><a href="#">面膜</a></li>
+                <li>|</li>
+                <li><a href="#">水乳面膜</a></li>
+                <li>|</li>
+                <li><a href="#">卸妆洁面</a></li>
+                <li>|</li>
+                <li><a href="#">彩妆香水</a></li>
+                <li>|</li>
+                <li><a href="#">防晒</a></li>
+                <li>|</li>
+                <li><a href="#">沐浴身体</a></li>
+                <li class="zs-r"><a href="#">洗护染发></a></li>
+            </ul>
+        </div>
+        <div class="zs-n">
+            <div class="zs-l">
+                <div class="zs-s">
+                    <ul>
+                        <li class="zs-s-l">
+
+                            <img src="images/zs-2-1.jpg" width="200px" />
+
+                        </li>
+                        <li class="zs-s-li"><a href="#">立即进入</a></li>
+                        <li class="zs-s-r">
+                            <a href="#">
+                                <img src="images/zs01.jpg"  height="240px"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="zs-x">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="images/zs-1-01.jpg" width="200px">
+                                <p>美妆仙mise-en-scene损伤护理精油70ml</p>
+                            </a>
+                            <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>89</span>
+								</span>
+                                <del class="oldPrice">¥219</del>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/zs-1-02.jpg" width="200px">
+                                <p>美妆仙mise-en-scene损伤护理精油70ml</p>
+                            </a>
+                            <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>89</span>
+								</span>
+                                <del class="oldPrice">¥219</del>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/zs-1-03.jpg" width="200px">
+                                <p>美妆仙mise-en-scene损伤护理精油70ml</p>
+                            </a>
+                            <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>89</span>
+								</span>
+                                <del class="oldPrice">¥219</del>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/zs-1-04.jpg" width="200px">
+                                <p>美妆仙mise-en-scene损伤护理精油70ml</p>
+                            </a>
+                            <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>89</span>
+								</span>
+                                <del class="oldPrice">¥219</del>
+                            </p>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="zs-r">
+                <ul>
+                    <span>热门品牌</span>
+                    <li><a href="#"><img src="images/zs-r-1.jpg" width="160" /><p>就是这么天然自信</p></a></li>
+                    <li><a href="#"><img src="images/zs-r-2.jpg" width="160" /><p>就是这么天然自信</p></a></li>
+                    <li><a href="#"><img src="images/zs-r-3.jpg" width="160" /><p>就是这么天然自信</p></a></li>
+                    <li><a href="#"><img src="images/zs-r-4.jpg" width="160" /><p>就是这么天然自信</p></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!--展示三区-->
+    <div class="zhanshi-san">
+        <div class="zs-top">
+            <p>营养食品</p>
+            <ul>
+                <li><a href="#">面膜</a></li>
+                <li>|</li>
+                <li><a href="#">水乳面膜</a></li>
+                <li>|</li>
+                <li><a href="#">卸妆洁面</a></li>
+                <li>|</li>
+                <li><a href="#">彩妆香水</a></li>
+                <li>|</li>
+                <li><a href="#">防晒</a></li>
+                <li>|</li>
+                <li><a href="#">沐浴身体</a></li>
+                <li class="zs-r"><a href="#">洗护染发></a></li>
+            </ul>
+        </div>
+        <div class="zs-n">
+            <div class="zs-l">
+                <div class="zs-s">
+                    <ul>
+                        <li class="zs-s-l">
+
+                            <img src="images/zs-3-1.jpg" width="200px" />
+
+                        </li>
+                        <li class="zs-s-li"><a href="#">立即进入</a></li>
+                        <li class="zs-s-r">
+                            <a href="#">
+                                <img src="images/zs01.jpg"  height="240px"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="zs-x">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="images/zs-1-01.jpg" width="200px">
+                                <p>美妆仙mise-en-scene损伤护理精油70ml</p>
+                            </a>
+                            <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>89</span>
+								</span>
+                                <del class="oldPrice">¥219</del>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/zs-1-02.jpg" width="200px">
+                                <p>美妆仙mise-en-scene损伤护理精油70ml</p>
+                            </a>
+                            <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>89</span>
+								</span>
+                                <del class="oldPrice">¥219</del>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/zs-1-03.jpg" width="200px">
+                                <p>美妆仙mise-en-scene损伤护理精油70ml</p>
+                            </a>
+                            <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>89</span>
+								</span>
+                                <del class="oldPrice">¥219</del>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/zs-1-04.jpg" width="200px">
+                                <p>美妆仙mise-en-scene损伤护理精油70ml</p>
+                            </a>
+                            <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>89</span>
+								</span>
+                                <del class="oldPrice">¥219</del>
+                            </p>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="zs-r">
+                <ul>
+                    <span>热门品牌</span>
+                    <li><a href="#"><img src="images/zs-r-1.jpg" width="160" /><p>就是这么天然自信</p></a></li>
+                    <li><a href="#"><img src="images/zs-r-2.jpg" width="160" /><p>就是这么天然自信</p></a></li>
+                    <li><a href="#"><img src="images/zs-r-3.jpg" width="160" /><p>就是这么天然自信</p></a></li>
+                    <li><a href="#"><img src="images/zs-r-4.jpg" width="160" /><p>就是这么天然自信</p></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!--展示四区-->
+    <div class="zhanshi-si">
+        <div class="zs-top">
+            <p>居家生活</p>
+            <ul>
+                <li><a href="#">面膜</a></li>
+                <li>|</li>
+                <li><a href="#">水乳面膜</a></li>
+                <li>|</li>
+                <li><a href="#">卸妆洁面</a></li>
+                <li>|</li>
+                <li><a href="#">彩妆香水</a></li>
+                <li>|</li>
+                <li><a href="#">防晒</a></li>
+                <li>|</li>
+                <li><a href="#">沐浴身体</a></li>
+                <li class="zs-r"><a href="#">洗护染发></a></li>
+            </ul>
+        </div>
+        <div class="zs-n">
+            <div class="zs-l">
+                <div class="zs-s">
+                    <ul>
+                        <li class="zs-s-l">
+
+                            <img src="images/zs-4-1.jpg" width="200px" />
+
+                        </li>
+                        <li class="zs-s-li"><a href="#">立即进入</a></li>
+                        <li class="zs-s-r">
+                            <a href="#">
+                                <img src="images/zs01.jpg"  height="240px"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="zs-x">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="images/zs-1-01.jpg" width="200px">
+                                <p>美妆仙mise-en-scene损伤护理精油70ml</p>
+                            </a>
+                            <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>89</span>
+								</span>
+                                <del class="oldPrice">¥219</del>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/zs-1-02.jpg" width="200px">
+                                <p>美妆仙mise-en-scene损伤护理精油70ml</p>
+                            </a>
+                            <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>89</span>
+								</span>
+                                <del class="oldPrice">¥219</del>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/zs-1-03.jpg" width="200px">
+                                <p>美妆仙mise-en-scene损伤护理精油70ml</p>
+                            </a>
+                            <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>89</span>
+								</span>
+                                <del class="oldPrice">¥219</del>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/zs-1-04.jpg" width="200px">
+                                <p>美妆仙mise-en-scene损伤护理精油70ml</p>
+                            </a>
+                            <p class="price">
+								<span class="newPrice">
+									<i>¥</i>
+									<span>89</span>
+								</span>
+                                <del class="oldPrice">¥219</del>
+                            </p>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="zs-r">
+                <ul>
+                    <span>热门品牌</span>
+                    <li><a href="#"><img src="images/zs-r-1.jpg" width="160" /><p>就是这么天然自信</p></a></li>
+                    <li><a href="#"><img src="images/zs-r-2.jpg" width="160" /><p>就是这么天然自信</p></a></li>
+                    <li><a href="#"><img src="images/zs-r-3.jpg" width="160" /><p>就是这么天然自信</p></a></li>
+                    <li><a href="#"><img src="images/zs-r-4.jpg" width="160" /><p>就是这么天然自信</p></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="foot">
+        <div class="w1">
+            <div class="foot-pic">
+                <ul>
+                    <li>
+                        <i>正品采购</i>
+                    </li>
+                    <li>
+                        <i>正品保险</i>
+                    </li>
+                    <li>
+                        <i>美国上市</i>
+                    </li>
+                    <li>
+                        <i>专业配送</i>
+                    </li>
+                    <li>
+                        <i>金牌服务</i>
+                    </li>
+                    <li>
+                        <i>万千信赖</i>
+                    </li>
+                    <li>
+                        <i>权威荣誉</i>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="foot-service" id="footService">
+                <dl>
+                    <dt>服务保障</dt>
+                    <dd><i></i><a href="#">正品保证</a></dd>
+                    <dd><i></i><a href="#">7天无理由放心退</a></dd>
+                    <dd><i></i><a href="#">退货返运费</a></dd>
+                    <dd><i></i><a href="#">7x15小时客户服务</a></dd>
+                </dl>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><i></i><a href="#">导购演示</a></dd>
+                    <dd><i></i><a href="#">订单操作</a></dd>
+                    <dd><i></i><a href="#">会员注册</a></dd>
+                    <dd><i></i><a href="#">账户管理</a></dd>
+                    <dd><i></i><a href="#">收货样品</a></dd>
+                    <dd><i></i><a href="#">会员等级</a></dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd><i></i><a href="#">快捷支付</a></dd>
+                    <dd><i></i><a href="#">23家主流网银支付</a></dd>
+                    <dd><i></i><a href="#">货到付款</a></dd>
+                    <dd><i></i><a href="#">支付宝、银联等支付</a></dd>
+                    <dd><i></i><a href="#">信用卡支付</a></dd>
+                    <dd><i></i><a href="#">零钱支付</a></dd>
+                </dl>
+                <dl>
+                    <dt>配送方式</dt>
+                    <dd><i></i><a href="#">全场满288元免运费</a></dd>
+                    <dd><i></i><a href="#">配送范围及运费</a></dd>
+                    <dd><i></i><a href="#">验货与签收</a></dd>
+                </dl>
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd><i></i><a href="#">退货政策</a></dd>
+                    <dd><i></i><a href="#">退货流程</a></dd>
+                    <dd><i></i><a href="#">退款方式和时效</a></dd>
+                </dl>
+
+                <div class="erweicode fl">
+                    <p>唯品会APP二维码</p>
+                    <img src="images/1466134037230.jpg" alt=""/>
+                    <p>下载唯品会移动APP</p>
+                </div>
+            </div>
+            <div class="about-us">
+                <div class="foot-nav">
+                    <a href="#">关于我们</a>
+                    <span>|</span>
+                    <a href="#">About us</a>
+                    <span>|</span>
+                    <a href="#">Investor Relations</a>
+                    <span>|</span>
+                    <a href="#">媒体报道</a>
+                    <span>|</span>
+                    <a href="#">品牌招商</a>
+                    <span>|</span>
+                    <a href="#">隐私条款</a>
+                    <span>|</span>
+                    <a href="#">唯品诚聘</a>
+                    <span>|</span>
+                    <a href="#">365爱心基金</a>
+                    <span>|</span>
+                    <a href="#">唯品卡</a>
+                    <span>|</span>
+                    <a href="#">唯品地图</a>
+                    <span>|</span>
+                    <a href="#">品牌大全</a>
+                    <span>|</span>
+                    <a href="#">联系我们</a>
+                </div>
+                <div class="copyright">
+                    <p>
+                        Copyright ? 2008-2017 vip.com，All Rights Reserved  使用本网站即表示接受 <a href="#">唯品会用户协议</a>。版权所有 <a
+                            href="#">广州唯品会信息科技有限公司</a>
+                    </p>
+                    <p>
+                        <a href="#">粤公网安备 44010302111111号</a>
+                        <a href="#">粤ICP备08114786号</a>
+                        <a href="#">ICP经营许可证：粤B2-20080329 </a>
+                        <a href="#">网络文化经营许可证：粤网文〔2015〕1528-229
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#">自营主体的营业执照及食品流通许可证</a>
+                        <a href="#">信息互联网药品交易服务资格证（粤C20140002）</a>
+                    </p>
+                    <div class="copyright-pic">
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>

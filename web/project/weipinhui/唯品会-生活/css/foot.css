@@ -1,0 +1,166 @@
+.w1{
+    width: 960px;
+    margin: 0 auto;
+}
+.foot {
+    height: 498px;
+}
+.foot .foot-pic {
+    height: 164px;
+}
+.foot .foot-pic ul li {
+    width: 137px;
+    height: 126px;
+    float: left;
+}
+.foot .foot-pic ul li i {
+    display: block;
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 66px;
+    height: 96px;
+    font-size: 0;
+    text-indent: -100%;
+    background: url(../images/footer_vip_iconsv_0704.png) no-repeat 0 0;
+    background-position: -10px -9px;
+}
+.foot .foot-pic ul li:nth-child(2) i{
+    background-position: -148px -9px;
+}
+.foot .foot-pic ul li:nth-child(3) i{
+    background-position: -295px -9px;
+}
+.foot .foot-pic ul li:nth-child(4) i{
+    background-position: -443px -9px;
+}
+.foot .foot-pic ul li:nth-child(5) i{
+    background-position: -590px -9px;
+}
+.foot .foot-pic ul li:nth-child(6) i{
+    background-position: -738px -9px;
+}
+.foot .foot-pic ul li:nth-child(7) i{
+    background-position: -885px -9px;
+}
+.foot .foot-service {
+    position: relative;
+    height: 145px;
+    padding-bottom: 25px;
+}
+.foot .foot-service dl {
+    float: left;
+    width: 145px;
+    height: 146px;
+    border-right: 1px solid #ccc;
+    padding-left: 15px;
+}
+
+.foot .foot-service dl dt {
+    height: 20px;
+    line-height: 20px;
+    color: #4D4D4D;
+    margin-bottom: 5px;
+}
+.foot .foot-service dl dd {
+    height: 20px;
+    line-height: 20px;
+}
+.foot .foot-service dl dd a:hover {
+    color: #f10180;
+}
+.foot .foot-service dl dd i {
+    float: left;
+    width: 3px;
+    height: 3px;
+    background-color: #6A6B6D;
+    margin: 9px 5px 0 0;
+}
+.foot .foot-service .erweicode {
+    width: 136px;
+    text-align: center;
+    color: #4D4D4D;
+}
+.foot .foot-service .erweicode img {
+    margin: 8px 0 2px 0;
+    width: 92px;
+}
+.foot .foot-service .erweicode p {
+    line-height: 20px;
+}
+.foot .about-us .foot-nav {
+    height: 30px;
+    line-height: 30px;
+    background-color: #D7237E;
+    color: #fff;
+    text-align: center;
+}
+.foot .about-us .foot-nav a {
+    color: #fff;
+}
+.foot .about-us .foot-nav a:hover {
+    color: pink;
+}
+.foot .about-us .copyright {
+    height: 120px;
+    text-align: center;
+    padding-top: 14px;
+}
+.foot .about-us .copyright p {
+    height: 20px;
+    line-height: 20px;
+    color: #666;
+}
+.foot .about-us .copyright p a:hover {
+    color: #D7237E;
+}
+.foot .about-us .copyright .copyright-pic {
+    margin-top: 15px;
+    padding: 4px 0;
+    height: 40px;
+}
+.foot .about-us .copyright .copyright-pic a {
+    display: inline-block;
+    margin-right: 9px;
+    height: 40px;
+    background-image: url(../images/footer.png);
+    background-repeat: no-repeat;
+}
+.foot .about-us .copyright .copyright-pic a:nth-child(1){
+    width: 105px;
+    background-position: 0 0;
+}
+.foot .about-us .copyright .copyright-pic a:nth-child(2){
+    width: 99px;
+    background-position: 0 -150px;
+}
+.foot .about-us .copyright .copyright-pic a:nth-child(3){
+    width: 66px;
+    background-position: 0 -200px;
+}
+.foot .about-us .copyright .copyright-pic a:nth-child(4){
+    width: 70px;
+    background-position: 0 -250px;
+}
+.foot .about-us .copyright .copyright-pic a:nth-child(5){
+    width: 75px;
+    background-position: 0 -300px;
+}
+.foot .about-us .copyright .copyright-pic a:nth-child(6){
+    width: 76px;
+    background-position: 0 -400px;
+}
+.foot .about-us .copyright .copyright-pic a:nth-child(7){
+    width: 76px;
+    background-position: 0 -450px;
+}
+
+
+
+
+
+
+
+.absolute {
+    position: absolute;
+}
+

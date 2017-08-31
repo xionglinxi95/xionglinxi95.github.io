@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>产品</title>
+    <link rel="stylesheet" href="source/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+
+<body>
+    <!--头部-->
+    <header id="header">
+        <a href="index.html" class="logo">
+            <img src="images/header_logo.png" alt="">    
+       </a>
+        <a href="index.html" class="download_app">
+            <img src="images/header_app.png" alt="">    
+       </a>
+    </header>
+
+      <section id="search">
+        <form action="">
+            <input type="search" name="search" placeholder="请输入你想要输入的商品" value="">
+            <a href="" class="btn btn-default">搜索</a>
+        </form>
+    </section>
+
+    <main id="product_list">
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+           <!--  <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">大家电
+                     </a>
+                     
+                </h4>
+            </div> -->
+            <!-- <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                    <div class="row">
+                         <div class="col-xs-4">
+                             <a href="#">电视</a>
+                        </div>
+                        <div class="col-xs-4">
+                            <a href="#">电视</a>
+                        </div>
+                        
+                        <div class="col-xs-4">
+                            <a href="#">电视</a>
+                        </div>
+                     </div>
+                 </div>
+               
+                
+                        
+                       
+                     </div>
+                 </div>
+             </div> -->
+        </div>
+    </div>
+    </main>
+
+    <!--页脚-->
+    <footer id="footer">
+        <div class="row">
+            <div class="col-xs-4"><a href="">登录</a></div>
+            <div class="col-xs-4"><a href="">注册</a></div>
+            <div class="col-xs-4"><img  class="arrows" src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</div>
+        </div>
+        <div class="">
+          <a href="#">手机APP下载</a>
+          <span>慢慢买手机版</span>
+          <span> -- 掌上比价平台</span>
+          <p> m.manmanbuy.com</p>
+        </div>
+    </footer>
+
+
+    <script type="text/template" id="product-list">
+      {{each result as item index}}
+       <div class="panel-heading" role="tab" id="heading{{index}}">
+                <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse{{index}}" aria-expanded="true" aria-controls="collapseOne" data-titleid="{{item.titleId}}">{{item.title}}
+                     </a>
+                </h4>
+         </div>
+        <div id="collapse{{index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                    <div class="row">
+                        <!--  <div class="col-xs-4">
+                             <a href="#">{{item.category}}</a>
+                        </div> -->
+                     </div>
+                 </div>
+            </div>
+     {{/each}}
+     </script>
+     <script type="text/template" id="product-display">
+      {{each result as item index}}
+        <div class="col-xs-4">
+              <a href="detail.html?categoryid={{item.categoryId}}">{{item.category}}</a>
+         </div>
+     {{/each}}
+    </script>
+    <script src="source/jquery/jquery.js"></script>
+    <script src="source/bootstrap/js/bootstrap.js"></script>
+    <script src="source/artTemplate/template.js"></script>
+    <script src='js/url.js'></script>
+    <script src='js/product.js'></script>
+    
+    <!-- meta:vp -->
+</body>
+
+</html>

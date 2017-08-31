@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>比价搜索</title>
+     <link rel="stylesheet" href="source/bootstrap/css/bootstrap.css">
+     <link rel="stylesheet" href="css/detail.css">
+</head>
+<body>
+    <!--头部-->
+    <header id="header">
+        <a href="index.html" class="logo">
+            <img src="images/header_logo.png" alt="">    
+       </a>
+        <a href="index.html" class="download_app">
+            <img src="images/header_app.png" alt="">    
+       </a>
+    </header>
+    <!--搜索-->
+    <section id="search">
+        <form action="">
+            <input type="search" name="search" placeholder="请输入你想要输入的商品" value="">
+            <a href="" class="btn btn-default">搜索</a>
+        </form>
+    </section>
+    <!--数据列表-->
+    <nav id="detail">
+        <ol class="breadcrumb">
+          <li><a href="start.html">首页</a></li>
+          <li><a href="product.html">全部分类</a></li>
+          <li>电视</li>
+        </ol>
+        <a href="#" class="btn btn-default">筛选</a>
+    </nav>
+
+    <!-- 主题部分 -->
+    <main id="main_body">
+       <!--  <ul class="media-list">
+            <li class="media">
+                <div class="media-left">
+                    <a href="#">
+                         <img class="" src="images/ic_cu.png" alt="">
+                     </a>
+                </div>
+                 <div class="media-body">
+                    <h4 class="media-heading">奥克斯(AUX) KFR-51LW/R1TC01+2 2匹 立柜式定速冷暖空调</h4>
+                    <p>￥3949.00</p>
+                    <span>报价(4)</span>&nbsp;&nbsp;
+                    <span>评论(2199)</span>
+                 </div>
+             </li>
+        </ul> -->
+    </main>
+
+    <!-- 分页 -->
+    <section id='paging'>
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                 第一页
+                <span class="caret"></span>
+             </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+        <a href="#" class="btn btn-default prev">上一页</a>
+        <a href="#" class="btn btn-default next">下一页</a>
+    </section>
+
+    <!--页脚-->
+    <footer id="footer">
+        <div class="row">
+            <div class="col-xs-4"><a href="">登录</a></div>
+            <div class="col-xs-4"><a href="">注册</a></div>
+            <div class="col-xs-4"><img  class="arrows" src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</div>
+        </div>
+        <div class="">
+          <a href="#">手机APP下载</a>
+          <span>慢慢买手机版</span>
+          <span> -- 掌上比价平台</span>
+          <p> m.manmanbuy.com</p>
+        </div>
+    </footer>
+  
+  <script type="text/template" id="product_data">
+    {{each result as item index}}
+      <ul class="media-list">
+            <li class="media">
+                <div class="media-left">
+                    <a href="product_detail.html?categoryId={{item.categoryId}}&productId={{item.productId}}">
+                         {{#item.productImg}}
+                     </a>
+                </div>
+                 <div class="media-body">
+                    <h4 class="media-heading">{{item.productName}}</h4>
+                    <p>{{item.productPrice}}</p>
+                    <span>{{item.productQuote}}</span>&nbsp;&nbsp;
+                    <span>{{item.productCom}}</span>
+                 </div>
+             </li>
+        </ul>
+        {{/each}}
+  </script>
+    <script src="source/jquery/jquery.js"></script>
+    <script src="source/bootstrap/js/bootstrap.js"></script>
+    <script src="source/artTemplate/template.js"></script>
+    <script src="js/url.js"></script>
+    <script src="js/detail.js"></script>
+</body>
+</html>

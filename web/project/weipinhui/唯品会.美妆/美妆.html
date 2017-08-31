@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>美妆频道_唯品会</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/head.css"/>
+    <link rel="stylesheet" href="css/foot.css"/>
+    <link rel="stylesheet" href="css/iconfont/iconfont.css" />
+    <link rel="stylesheet" href="css/iconfont1/iconfont.css" />
+    <link rel="icon" href="favicon_eef1309.ico" type="image/gif">
+
+    <link rel="stylesheet" href="css/美妆.css">
+
+    <!--工具包-->
+    <script src="js/jquery-1.11.1-min.js"></script>
+    <script src="js/jquery-1.12.4.js"></script>
+    <!--功能包-->
+    <script src="js/head.js"></script>
+    <script src = "js/foot.js"></script>
+
+    <script src="js/美妆.js"></script>
+
+</head>
+<body>
+    <!--头部-->
+    <div class="zym-head">
+        <div class="top" id="headTop">
+            <div class="w">
+                <div id="cityBox" class="city-box">
+                    <div class="city fl">北京 <i>▼</i></div>
+                    <table id="cityList" class="city-list">
+                        <tbody>
+                        <tr>
+                            <td><p>请选择所在的收获地址</p></td>
+                        </tr>
+                        <tr>
+                            <th>A</th>
+                            <td>
+                                <span>安徽</span>
+                                <span>澳门</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>B</th>
+                            <td>
+                                <span>北京</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>C</th>
+                            <td>
+                                <span>重庆</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>F</th>
+                            <td>
+                                <span>福建</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>G</th>
+                            <td>
+                                <span>广东</span>
+                                <span>广西</span>
+                                <span>贵州</span>
+                                <span>甘肃</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>H</th>
+                            <td>
+                                <span>河北</span>
+                                <span>河南</span>
+                                <span>黑龙江</span>
+                                <span>海南</span>
+                                <span>湖北</span>
+                                <span>湖南</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>J</th>
+                            <td>
+                                <span>江苏</span>
+                                <span>吉林</span>
+                                <span>江西</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>L</th>
+                            <td>
+                                <span>辽宁</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>N</th>
+                            <td>
+                                <span>内蒙古</span>
+                                <span>宁夏</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Q</th>
+                            <td>
+                                <span>青海</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>S</th>
+                            <td>
+                                <span>上海</span>
+                                <span>山东</span>
+                                <span>山西</span>
+                                <span>四川</span>
+                                <span>陕西</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>T</th>
+                            <td>
+                                <span>台湾</span>
+                                <span>天津</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>X</th>
+                            <td>
+                                <span>西藏</span>
+                                <span>香港</span>
+                                <span>新疆</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Y</th>
+                            <td>
+                                <span>云南</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Z</th>
+                            <td>
+                                <span>浙江</span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <ul class="fr" id="navUl">
+                    <li>
+                        <a href="javascript:;">请登录</a>
+                        <div class="user-info" id="userInfo">
+                            <div class="user-info-top">
+                                <span class="pic"></span>
+                                <p>
+                                    <a href="javascript:;">你好!&nbsp;&nbsp;[ 请登录 ]</a>
+                                </p>
+                            </div>
+                            <div class="user-info-list" id="userInFolist">
+                                <span><a href="javascript:;">我的收藏</a></span>
+                                <span><a href="javascript:;">我的订单</a></span>
+                                <span><a href="javascript:;">零钱</a></span>
+                                <span><a href="javascript:;">我的优惠券</a></span>
+                                <span><a href="javascript:;">我的唯品币</a></span>
+                                <span><a href="javascript:;">唯品金融</a></span>
+                            </div>
+                        </div>
+                    </li>
+                    <span>/</span>
+                    <li><a href="javascript:;">注册</a></li>
+                    <span>/</span>
+                    <li><a href="javascript:;">我的订单</a></li>
+                    <span>/</span>
+                    <li class="temai">
+                        <a href="javascript:;">我的特卖</a>
+                        <div class="shoucang" id="shouChang">
+                            <p>
+                                <span><a href="javascript:;">品牌收藏(0)</a></span>
+                                <span><a href="javascript:;">商品收藏(0)</a></span>
+                                <span><a href="javascript:;">我的足迹(0)</a></span>
+                            </p>
+                        </div>
+                    </li>
+                    <span>/</span>
+                    <li class="vip-club">
+                        <a href="javascript:;">会员俱乐部</a>
+                        <div class="vip-club-nav" id="vipClubNav">
+                            <p>
+                                <span><a href="javascript:;">俱乐部首页</a></span>
+                                <span><a href="javascript:;">唯品币兑换</a></span>
+                                <span><a href="javascript:;">免费抽大奖</a></span>
+                            </p>
+                        </div>
+                    </li>
+                    <span>/</span>
+                    <li class="servce">
+                        <a href="javascript:;">客户服务</a>
+                        <div class="servce-nav" id="servceNav">
+                            <p>
+                                <span><a href="javascript:;">联系客服</a></span>
+                                <span><a href="javascript:;">帮助中心</a></span>
+                                <span><a href="javascript:;">服务中心</a></span>
+                                <span><a href="javascript:;">知识产权投诉</a></span>
+                            </p>
+                        </div>
+                    </li>
+                    <span>/</span>
+                    <li class="phone">
+                        <i></i>
+                        <a href="javascript:;">手机版</a>
+                        <div class="phone-nav" id="phoneNav">
+                            <div>
+                                <a href="javascript:;">
+                                    <img src="images/1466134037230.jpg" alt=""/>
+                                </a>
+                                <p>
+                                    <a href="javascript:;">随时逛 及时抢</a>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <span>/</span>
+                    <li class="more" id="navUlLiMore">
+                        <a href="javascript:;">更多&nbsp;<i>▽</i></a>
+                        <div class="more-list" id="moreList">
+                            <h5>合作专区</h5>
+                            <p class="ad">
+                                <a href="javascript:;">联名卡申请</a>
+                                <a href="javascript:;">唯品卡</a>
+                                <a href="javascript:;">支付专区</a>
+                            </p>
+                            <h5>关于我们</h5>
+                            <p>
+                                <a href="javascript:;">Sell on vip</a>
+                                <a href="javascript:;">品牌招商</a>
+                                <a href="javascript:;">官方博客</a>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="con w" id="headCon">
+            <h1><img src="images/logo.png" /></h1>
+            <ul class="ad fr">
+                <li><img src="images/1466131264367.png" alt=""/></li>
+                <li><img src="images/1466131266290.png" alt=""/></li>
+                <li><img src="images/1466131268726.png" alt=""/></li>
+                <span class="line"></span>
+                <li class="bag fr" id="Bag">
+                    <p class="my-bag" id="myBag">
+                        <i><em>0</em></i>
+                        <span>我的购物袋</span>
+                    </p>
+                    <div class="bag-list" id="bagList">
+                        <span class="white-line"></span>
+                        <div class="bag-list-in">
+                            <p>好像还未登录！<a href="javascript:;">马上登录</a>查看购物袋吧！</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav" id="headNav">
+            <div class="w">
+                <ul class="first-ul">
+                    <li><a href="../唯品会首页/index.html">首页</a></li>
+                    <li><a href="../唯品会-唯品国际/weipinguoji.html">唯品国际</a></li>
+                    <li><a href="../唯品会-母婴/muying.html">母婴</a></li>
+                    <li><a href="../唯品会-家居家电/家居家电.html">家居家电</a></li>
+                </ul>
+                <ul class="second-ul">
+                    <li><a href="../唯品会-男士/男士.html">男士</a></li>
+                    <li><a href="../唯品会.美妆/美妆.html">美妆</a></li>
+                    <li><a href="../唯品会-生活/live.html">生活</a></li>
+                    <li><a href="../唯品会-金融/ws-html/money-index-00.html">金融</a></li>
+                    <li class="more"  id="morePic">
+                        更多 <i>▼</i>
+                        <div class="second-ul-more-pic">
+                            <div class="more-pic">
+                                <a href="javascript:;">
+                                    <img src="images/111.jpg" alt=""/>
+                                    <i class="show"></i>
+                                    <p>女装</p>
+                                </a>
+                            </div>
+                            <div class="more-pic">
+                                <a href="javascript:;">
+                                    <img src="images/222.jpg" alt=""/>
+                                    <i class="show"></i>
+                                    <p>鞋包</p>
+                                </a>
+                            </div>
+                            <div class="more-pic">
+                                <a href="javascript:;">
+                                    <img src="images/333.jpg" alt=""/>
+                                    <i class="show"></i>
+                                    <p>配饰</p>
+                                </a>
+                            </div>
+                            <div class="more-pic">
+                                <a href="javascript:;">
+                                    <img src="images/444.jpg" alt=""/>
+                                    <i class="show"></i>
+                                    <p>运动</p>
+                                </a>
+                            </div>
+                            <div class="more-pic">
+                                <a href="javascript:;">
+                                    <img src="images/555.jpg" alt=""/>
+                                    <i class="show"></i>
+                                    <p>爱丽奢</p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ol class="fr">
+                    <li>
+                        <a href="javascript:;">
+                            <i></i>分类
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <i class="second-i"></i>预告
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="zym-sidebar" id="zymSideBar">
+        <div class="sidebar-charge" id="sidebarCharge">
+            <i class="iconfont">&#xe64d;</i>
+            <span>帐号</span>
+            <div class="sidebar-charge-login" id="sidebarChargeLogin">
+                <img src="images/my_cnt_pic.jpg" alt=""/>
+                <p>
+                    你好 ! 请
+                    <a href="javascript:;">登录</a> |
+                    <a href="javascript:;">注册</a>
+                </p>
+                <div class="sidebar-charge-center">
+                    <a>
+                        <i class="iconfont">&#xe61f;</i>
+                        我的订单
+                    </a>
+                    <a>
+                        <i class="iconfont">&#xe605;</i>
+                        我的订单
+                    </a>
+                </div>
+                <a href="javascript:;" class="avip-club">会员俱乐部</a>
+                <span id="vipClubClose">×</span>
+            </div>
+        </div>
+        <div class="shop-bag" id="shopBag">
+            <i class="iconfont">&#xe64b;</i>
+            <p>购物袋</p>
+            <p></p>
+            <p></p>
+            <em>0</em>
+            <div class="shop-bag-in" id="shopBagIn">
+                <img src="images/my_cnt_pic.jpg" alt="" class=""/>
+                <p>
+                    你好 ! 请
+                    <a href="javascript:;">登录</a> |
+                    <a href="javascript:;">注册</a>
+                </p>
+                <span>×</span>
+            </div>
+        </div>
+        <div class="small-list" id="smallList">
+            <i class="iconfont">&#xe625;</i>
+            <p class="incon-in1">我的优惠券</p>
+            <i class="iconfont">&#xe601;</i>
+            <p class="incon-in2">品牌收藏</p>
+            <i class="iconfont">&#xe634;</i>
+            <p class="incon-in3">商品收藏</p>
+            <i class="iconfont">&#xe687;</i>
+            <p class="incon-in4">我的足迹</p>
+        </div>
+        <div class="bottom-list">
+            <div id="vipTick">
+                <i class="iconfont">&#xe681;</i>
+                <p class="incon-in5">会员反馈</p>
+            </div>
+            <div id="backTop">
+                <i class="iconfont">&#xe66c;</i>
+                <p class="incon-in6">返回顶部</p>
+            </div>
+        </div>
+
+    </div>
+    <!--轮播-->
+    <div class="ws-lunbo">
+        <ol class="ollunbo">
+            <li  class="ws-show"><a href="javascript:;"><img src="images/14910367297150.jpg" alt=""/></a></li>
+            <li><a href="javascript:;"><img src="images/14910241258013.jpg" alt=""/></a></li>
+            <li><a href="javascript:;"><img src="images/14910334562485.jpg" alt=""/></a></li>
+            <li><a href="javascript:;"><img src="images/14910336806369.jpg" alt=""/></a></li>
+        </ol>
+
+        <ul class="wsul">
+
+        </ul>
+    </div>
+    <div class="ws-nav ws-w">
+        <img src="images/14910505720978.jpg" alt=""/>
+        <img src="images/14910505458318.jpg" alt=""/>
+        <img src="images/14913582305946.jpg" alt=""/>
+    </div>
+    <div class="ws-hot ws-w">
+        <div class="hot-tu"></div>
+    </div>
+    <div class="ws-hot-gt ws-w">
+        <div class="ws-hufu"><img src="images/1_urmh.jpg" alt=""/></div>
+        <ul>
+            <li><a href="javascript:;"><img src="images/2_omfu.jpg" alt=""/></a></li>
+            <li><a href="javascript:;"><img src="images/3_llgc.jpg" alt=""/></a></li>
+            <li><a href="javascript:;"><img src="images/4_bwql.jpg" alt=""/></a></li>
+            <li><a href="javascript:;"><img src="images/5_xkip.jpg" alt=""/></a></li>
+            <li><a href="javascript:;"><img src="images/6_hgbl.jpg" alt=""/></a></li>
+            <li><a href="javascript:;"><img src="images/7_dbyd.jpg" alt=""/></a></li>
+            <li><a href="javascript:;"><img src="images/8_fznl.jpg" alt=""/></a></li>
+            <li><a href="javascript:;"><img src="images/9.jpg" alt=""/></a></li>
+        </ul>
+    </div>
+    <div class="ws-timer">
+        <img src="images/daojishi_nkyq.png" alt=""/>
+        <b class="hour">00</b>
+        <b class="minute">00</b>
+        <b class="second">00</b>
+    </div>
+    <div class="ws-new ws-w">
+        <div class="new ws-fl">
+            <a href="javascript:;"><img src="images/07114715.jpg" alt=""/></a>
+            <span>0.8</span>
+            <em><a href="">折起&nbsp;春夏美裙节-颜值美妆</a></em>
+            <p>剩3天</p>
+        </div>
+        <div class="new ws-fr">
+            <a href="javascript:;"><img src="images/4_vvzh.jpg" alt=""/></a>
+            <span>0.8</span>
+            <em><a href="">折起&nbsp;补水面膜帮你备好旅行美Look</a></em>
+            <p>剩2天</p>
+        </div>
+    </div>
+    <div class="ws-new ws-w">
+        <div class="new ws-fl">
+            <a href="javascript:;"><img src="images/4_nszs.jpg" alt=""/></a>
+            <span>0.8</span>
+            <em><a href="">折起&nbsp;(韩束x吾尊)天生一对男女护肤...</a></em>
+            <p>剩3天</p>
+        </div>
+        <div class="new ws-fr">
+            <a href="javascript:;"><img src="images/1491034076375.jpg" alt=""/></a>
+            <span>2.1</span>
+            <em><a href="">折起&nbsp;面膜大作战 爆款斗水润</a></em>
+            <p>剩2天</p>
+        </div>
+    </div>
+    <div class="ws-new ws-w">
+        <div class="new ws-fl">
+            <a href="javascript:;"><img src="images/4_ebas.jpg" alt=""/></a>
+            <span>3.2</span>
+            <em><a href="">折起&nbsp;雅诗兰黛化妆品专场</a></em>
+            <p>剩3天</p>
+        </div>
+        <div class="new ws-fr">
+            <a href="javascript:;"><img src="images/4_wrhc.jpg" alt=""/></a>
+            <span>0.8</span>
+            <em><a href="">折起&nbsp;欧莱雅Lorea化妆品专场</a></em>
+            <p>剩2天</p>
+        </div>
+    </div>
+    <div class="ws-new ws-w">
+        <div class="new ws-fl">
+            <a href="javascript:;"><img src="images/4_kfqs.jpg" alt=""/></a>
+            <span>3.1</span>
+            <em><a href="">折起&nbsp;玉兰油OLAY护肤品专场</a></em>
+            <p>剩4天</p>
+        </div>
+        <div class="new ws-fr">
+            <a href="javascript:;"><img src="images/4_kqqn_ggmv_vxbn_mqay.jpg" alt=""/></a>
+            <span>2.8</span>
+            <em><a href="">折起&nbsp;百草集Herborist化妆品专场</a></em>
+            <p>剩1天</p>
+        </div>
+    </div>
+    <!--最后疯抢-->
+    <div class="ws-time ws-w">
+        <img src="images/标题-最后疯抢.png" alt=""/>
+    </div>
+    <div class="ws-new ws-w ws-last">
+        <div class="new last">
+            <a href="javascript:;"><img src="images/4_hsgl.jpg" alt=""/></a>
+            <span>3.1</span>
+            <em><a href="">折起&nbsp;海蓝之谜LAMER化妆品专场</a></em>
+            <p>剩4天</p>
+        </div>
+        <div class="new last">
+            <a href="javascript:;"><img src="images/4_nszs.jpg" alt=""/></a>
+            <span>2.8</span>
+            <em><a href="">折起&nbsp;天生一对，9元秒杀，男女护肤大不同0.0</a></em>
+            <p>剩1天</p>
+        </div>
+        <div class="new last">
+            <a href="javascript:;"><img src="images/4_vvzh.jpg" alt=""/></a>
+            <span>2.8</span>
+            <em><a href="">折起&nbsp;补水面膜帮你备好旅行类Look</a></em>
+            <p>剩1天</p>
+        </div>
+    </div>
+    <div class="ws-new ws-w ws-last">
+        <div class="new last">
+            <a href="javascript:;"><img src="images/750_xejl.jpg" alt=""/></a>
+            <span>3.1</span>
+            <em><a href="">折起&nbsp;改写肌肤命运SK--LL专场0.0</a></em>
+            <p>剩4天</p>
+        </div>
+        <div class="new last">
+            <a href="javascript:;"><img src="images/06259246.jpg" alt=""/></a>
+            <span>2.8</span>
+            <em><a href="">折起&nbsp;百草集Herborist化妆品专场</a></em>
+            <p>剩1天</p>
+        </div>
+        <div class="new last">
+            <a href="javascript:;"><img src="images/4_kfqs.jpg" alt=""/></a>
+            <span>2.8</span>
+            <em><a href="">折起&nbsp;OLAY化妆品专场</a></em>
+            <p>剩1天</p>
+        </div>
+    </div>
+    <div class="ws-new ws-w ws-last">
+        <div class="new last">
+            <a href="javascript:;"><img src="images/4_kkuw.jpg" alt=""/></a>
+            <span>3.1</span>
+            <em><a href="">折起&nbsp;羽西 开启中药护肤新传奇0.0</a></em>
+            <p>剩4天</p>
+        </div>
+        <div class="new last">
+            <a href="javascript:;"><img src="images/4_jbfx.jpg"alt=""/></a>
+            <span>2.8</span>
+            <em><a href="">折起&nbsp;百草集Men男士护肤洁面洗护专场</a></em>
+            <p>剩1天</p>
+        </div>
+        <div class="new last">
+            <a href="javascript:;"><img src="images/1491481917755.jpg" alt=""/></a>
+            <span>2.8</span>
+            <em><a href="">折起&nbsp;经典款拔草指南 面膜洁面化妆水</a></em>
+            <p>剩1天</p>
+            <div></div>
+        </div>
+    </div>
+
+
+<!--尾部-->
+    <div class="foot">
+        <div class="w1">
+            <div class="foot-pic">
+                <ul>
+                    <li>
+                        <i>正品采购</i>
+                    </li>
+                    <li>
+                        <i>正品保险</i>
+                    </li>
+                    <li>
+                        <i>美国上市</i>
+                    </li>
+                    <li>
+                        <i>专业配送</i>
+                    </li>
+                    <li>
+                        <i>金牌服务</i>
+                    </li>
+                    <li>
+                        <i>万千信赖</i>
+                    </li>
+                    <li>
+                        <i>权威荣誉</i>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="foot-service" id="footService">
+                <dl>
+                    <dt>服务保障</dt>
+                    <dd><i></i><a href="javascript:;">正品保证</a></dd>
+                    <dd><i></i><a href="javascript:;">7天无理由放心退</a></dd>
+                    <dd><i></i><a href="javascript:;">退货返运费</a></dd>
+                    <dd><i></i><a href="javascript:;">7x15小时客户服务</a></dd>
+                </dl>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><i></i><a href="javascript:;">导购演示</a></dd>
+                    <dd><i></i><a href="javascript:;">订单操作</a></dd>
+                    <dd><i></i><a href="javascript:;">会员注册</a></dd>
+                    <dd><i></i><a href="javascript:;">账户管理</a></dd>
+                    <dd><i></i><a href="javascript:;">收货样品</a></dd>
+                    <dd><i></i><a href="javascript:;">会员等级</a></dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd><i></i><a href="javascript:;">快捷支付</a></dd>
+                    <dd><i></i><a href="javascript:;">23家主流网银支付</a></dd>
+                    <dd><i></i><a href="javascript:;">货到付款</a></dd>
+                    <dd><i></i><a href="javascript:;">支付宝、银联等支付</a></dd>
+                    <dd><i></i><a href="javascript:;">信用卡支付</a></dd>
+                    <dd><i></i><a href="javascript:;">零钱支付</a></dd>
+                </dl>
+                <dl>
+                    <dt>配送方式</dt>
+                    <dd><i></i><a href="javascript:;">全场满288元免运费</a></dd>
+                    <dd><i></i><a href="javascript:;">配送范围及运费</a></dd>
+                    <dd><i></i><a href="javascript:;">验货与签收</a></dd>
+                </dl>
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd><i></i><a href="javascript:;">退货政策</a></dd>
+                    <dd><i></i><a href="javascript:;">退货流程</a></dd>
+                    <dd><i></i><a href="javascript:;">退款方式和时效</a></dd>
+                </dl>
+
+                <div class="erweicode fl">
+                    <p>唯品会APP二维码</p>
+                    <img src="images/1466134037230.jpg" alt=""/>
+                    <p>下载唯品会移动APP</p>
+                </div>
+            </div>
+            <div class="about-us">
+                <div class="foot-nav">
+                    <a href="javascript:;">关于我们</a>
+                    <span>|</span>
+                    <a href="javascript:;">About us</a>
+                    <span>|</span>
+                    <a href="javascript:;">Investor Relations</a>
+                    <span>|</span>
+                    <a href="javascript:;">媒体报道</a>
+                    <span>|</span>
+                    <a href="javascript:;">品牌招商</a>
+                    <span>|</span>
+                    <a href="javascript:;">隐私条款</a>
+                    <span>|</span>
+                    <a href="javascript:;">唯品诚聘</a>
+                    <span>|</span>
+                    <a href="javascript:;">365爱心基金</a>
+                    <span>|</span>
+                    <a href="javascript:;">唯品卡</a>
+                    <span>|</span>
+                    <a href="javascript:;">唯品地图</a>
+                    <span>|</span>
+                    <a href="javascript:;">品牌大全</a>
+                    <span>|</span>
+                    <a href="javascript:;">联系我们</a>
+                </div>
+                <div class="copyright">
+                    <p>
+                        Copyright ? 2008-2017 vip.com，All Rights Reserved  使用本网站即表示接受 <a href="javascript:;">唯品会用户协议</a>。版权所有 <a
+                            href="javascript:;">广州唯品会信息科技有限公司</a>
+                    </p>
+                    <p>
+                        <a href="javascript:;">粤公网安备 44010302111111号</a>
+                        <a href="javascript:;">粤ICP备08114786号</a>
+                        <a href="javascript:;">ICP经营许可证：粤B2-20080329 </a>
+                        <a href="javascript:;">网络文化经营许可证：粤网文〔2015〕1528-229
+                        </a>
+                    </p>
+                    <p>
+                        <a href="javascript:;">自营主体的营业执照及食品流通许可证</a>
+                        <a href="javascript:;">信息互联网药品交易服务资格证（粤C20140002）</a>
+                    </p>
+                    <div class="copyright-pic">
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

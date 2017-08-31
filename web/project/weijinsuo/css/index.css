@@ -1,0 +1,316 @@
+/* 导入 字体文件 */
+@font-face {
+  font-family: 'wjsfont';
+  src: url('../font/MiFie-Web-Font.eot');
+  src: url('../font/MiFie-Web-Font.eot?#iefix') format('embedded-opentype'), url('../font/MiFie-Web-Font.woff') format('woff'), url('../font/MiFie-Web-Font.ttf') format('truetype'), url('../font/MiFie-Web-Font.svg') format('svg');
+}
+/* 定义 使用的class */
+.wjsfont {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'wjsfont';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+.wjsfont-logo::before {
+  content: '\e920';
+}
+.wjsfont-name::before {
+  content: '\e921';
+}
+.wjsfont-e903::before {
+  content: '\e903';
+}
+.wjsfont-e901::before {
+  content: '\e901';
+}
+.wjsfont-e904::before {
+  content: '\e904';
+}
+.wjsfont-e905::before {
+  content: '\e905';
+}
+.wjsfont-e902::before {
+  content: '\e902';
+}
+/* 添加 产品列表的 文字样式 */
+.wjsfont-e915::before {
+  content: '\e915';
+}
+.wjsfont-new01::before {
+  content: "\e90e";
+}
+.wjsfont-new02::before {
+  content: "\e90f";
+}
+.wjsfont-new03::before {
+  content: "\e910";
+}
+.wjsfont-new04::before {
+  content: "\e911";
+}
+/* 网页 最下方的 合作单位 */
+.wjsfont-partner01::before {
+  content: "\e946";
+}
+.wjsfont-partner02::before {
+  content: "\e92f";
+}
+.wjsfont-partner03::before {
+  content: "\e92e";
+}
+.wjsfont-partner04::before {
+  content: "\e92a";
+}
+.wjsfont-partner05::before {
+  content: "\e929";
+}
+.wjsfont-partner06::before {
+  content: "\e931";
+}
+.wjsfont-partner07::before {
+  content: "\e92c";
+}
+.wjsfont-partner08::before {
+  content: "\e92b";
+}
+.wjsfont-partner09::before {
+  content: "\e92d";
+}
+/*头部工具栏*/
+.top_tool .row > div {
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  height: 40px;
+  display: block;
+  text-align: center;
+  line-height: 40px;
+}
+.top_tool .row > div a {
+  color: #808080;
+}
+.top_tool .row > div .btn {
+  color: #fff;
+}
+/*微金所 导航条*/
+.wjs_nav nav {
+  margin-bottom: 0;
+}
+.wjs_nav nav a {
+  height: 80px;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 80px;
+}
+.wjs_nav nav a:hover,
+.wjs_nav nav a:focus {
+  border-bottom: 1px solid red;
+}
+.wjs_nav nav .navbar-brand {
+  padding-top: 5px;
+}
+.wjs_nav nav .navbar-brand .wjsfont-logo {
+  font-size: 70px;
+  color: red;
+}
+.wjs_nav nav .navbar-brand .wjsfont-name {
+  font-size: 70px;
+  color: #808080;
+}
+/* 轮播图 */
+.wjs_carousel img {
+  width: 100%;
+}
+/* 支付交易保障 */
+.wjs_exchange {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.wjs_exchange .row > div {
+  margin-top: 20px;
+}
+.wjs_exchange a {
+  color: #808080;
+}
+.wjs_exchange a:hover {
+  color: red;
+}
+.wjs_exchange a .wjsfont {
+  font-size: 40px;
+}
+.wjs_exchange a h4 {
+  font-size: 22px;
+}
+/* 正在排队 */
+.wjs_waiting {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.wjs_waiting .pull-left > a {
+  color: red;
+  border-bottom: 1px dashed red;
+  text-decoration: none;
+}
+.wjs_waiting .pull-right > a {
+  color: #333333;
+  font-size: 16px;
+}
+/* 微投资 */
+.wjs_small_buy a {
+  color: #808080;
+  /* 红色体验卡片 */
+  /* 进度条的卡片 */
+}
+.wjs_small_buy a .cart {
+  padding-right: 80px;
+  position: relative;
+  background-color: #f7f7f7;
+  box-shadow: 1px 1px 1px 1px #ccc, -1px -1px 1px 1px #ccc;
+}
+.wjs_small_buy a .cart .cart_content {
+  width: 100%;
+  border-right: 1px dashed #000;
+}
+.wjs_small_buy a .cart .cart_content h4 {
+  padding-top: 40px;
+  text-align: center;
+}
+.wjs_small_buy a .cart .cart_content .bottom_content {
+  padding: 0 10px;
+}
+.wjs_small_buy a .cart .cart_rate {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 80px;
+  padding-top: 50px;
+  text-align: center;
+}
+.wjs_small_buy a .cart .cart_rate:before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 2px 1px 0;
+}
+.wjs_small_buy a .cart .cart_rate:after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform: translate(-50%, 50%);
+  box-shadow: 0 -2px 1px 0;
+}
+.wjs_small_buy a .cart_exp {
+  background-color: red;
+  color: #fff;
+}
+.wjs_small_buy a .cart_exp .cart_content {
+  border-right: 1px dashed #fff;
+  position: relative;
+}
+.wjs_small_buy a .cart_exp .cart_content .wjsfont {
+  position: absolute;
+  font-size: 40px;
+  top: 0;
+  left: 0;
+}
+.wjs_small_buy a .cart_progress .bottom_content {
+  /*  给pull-left pull-right   */
+}
+.wjs_small_buy a .cart_progress .bottom_content > div {
+  width: 50%;
+}
+.wjs_small_buy a .cart_progress .cart_rate span:first-child {
+  border: 1px solid red;
+  color: red;
+}
+.wjs_small_buy a .cart_progress .cart_rate span:last-child {
+  border: 1px solid green;
+  color: green;
+}
+/* 新闻 */
+.wjs_news {
+  /* 全部新闻 */
+  /* 新闻标题 */
+}
+.wjs_news .all_news {
+  font-size: 30px;
+  border-bottom: 1px solid #000;
+  position: relative;
+}
+.wjs_news .all_news:before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  right: 0;
+  bottom: 0;
+  transform: translateY(50%);
+  background-color: #fff;
+}
+.wjs_news .news_title {
+  position: relative;
+}
+.wjs_news .news_title .line {
+  border-right: 1px dashed #000;
+  height: 400px;
+  position: absolute;
+  left: 75px;
+  z-index: -1;
+}
+.wjs_news .news_title ul {
+  list-style: none;
+}
+.wjs_news .news_title ul li a {
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #cccccc;
+  text-align: center;
+  margin-bottom: 50px;
+  padding-top: 10px;
+}
+.wjs_news .news_title ul li a:hover,
+.wjs_news .news_title ul li a:focus {
+  background-color: red;
+}
+.wjs_news .news_title ul li .wjsfont {
+  font-size: 50px;
+  color: #fff;
+}
+/*尾部 */
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  float: left;
+  margin-left: 40px;
+}
+footer ul li span {
+  font-size: 80px;
+  color: #808080;
+}
+footer ul li span:hover {
+  color: red;
+}

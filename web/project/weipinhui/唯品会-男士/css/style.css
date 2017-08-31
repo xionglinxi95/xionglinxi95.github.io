@@ -1,0 +1,116 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: 0;
+}
+body {
+    font: 12px/1.5 tahoma,arial,Hiragino Sans GB,WenQuanYi Micro Hei,\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif;
+}
+a {
+    text-decoration:none;
+    out-line: none;
+    color: #333333;
+    border: none;
+    outline: none;
+}
+img {
+    display: block;
+    vertical-align: top;
+    border: 0;
+}
+dd {
+    margin: 0;
+    padding: 0;
+}
+.wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+.all {
+    height: 360px;
+    margin: 0 auto 40px;
+    position: relative;
+}
+
+.screen {
+    height: 360px;
+    overflow: hidden;
+    position: relative;
+}
+
+.screen li {
+    width: 1344px;
+    height: 360px;
+    overflow: hidden;
+    float: left;
+}
+
+.screen ul {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 5376px;
+}
+.screen ul li.banner_one{
+    background: url(../images/lb-1.jpg) center top no-repeat;
+}
+.screen ul li.banner_two{
+    background: url(../images/lb-2.jpg) center top no-repeat;
+}
+.screen ul li.banner_three{
+    background: url(../images/lb-3.jpg) center top no-repeat;
+}
+.all ol {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.all ol li {
+    float: left;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+
+.all ol li.current {
+    background: yellow;
+}
+
+#arr {
+    display: none;
+
+}
+#arr span {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 188px;
+    top: 50%;
+    margin-top: -20px;
+    background: #000;
+    cursor: pointer;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-family: '黑体';
+    font-size: 30px;
+    color: #fff;
+    opacity: 0.3;
+    border: 1px solid #fff;
+
+}
+
+#arr #right {
+    right: 188px;
+    left: auto;
+}
+

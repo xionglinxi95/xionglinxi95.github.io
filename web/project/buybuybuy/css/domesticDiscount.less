@@ -1,0 +1,152 @@
+@import "base.less";
+#header{  
+    background: #FF841D; 
+    width: 100%;
+    height:50px;
+    position: relative; 
+    line-height: 50px;
+  .logo{ 
+      position: absolute; 
+      left: 10px;
+    img{ 
+        width: 200px;
+    }
+  }
+  .download_app{
+    position: absolute;
+      right: 10px;
+     img{
+         height: 30px;
+     }
+  } 
+} 
+#sly_goodsDiscount{
+    max-width:960px;
+    margin: 0 auto;
+    background: #fff;
+    text-align: left;
+    .goodsListBox{
+       ul{ 
+           box-sizing: border-box;
+           margin-bottom: 0;
+           display: table;
+           margin: 0px;
+           padding: 0;
+           li{
+             width: 50%;
+             float: left;
+             overflow:hidden;
+             padding: 10px 0 0 10px;
+             border-left: 1px solid #EEEEEE;
+             border-bottom: 1px solid #EEEEEE;
+             display: table-cell;
+             vertical-align: middle;
+             p{
+                 margin: 0;
+                 font-size: 14px;
+                 word-break:break-all;
+                 -webkit-line-clamp:2;
+                 overflow: hidden;
+                 padding: 0 8px;
+                 display: -webkit-box;
+                 -webkit-box-orient: vertical;
+             }
+             p:nth-child(3){
+                 color: #FF6C87;
+                 -webkit-line-clamp:1;
+                 height: 18px;
+                 line-height: 18px;
+             }
+            p:nth-child(2){
+                height: 36px;
+                line-height: 36px;
+             }
+             .info{
+                 font-size: 12px;
+                 color: #a1a1a1;;
+                 padding:5px 8px 8px;
+             }
+             a{
+                 display: block;
+                 -webkit-tap-highlight-color: rgba(0,0,0,0);
+                    .imgContainer{
+                         width:140px;
+                        height: 140px;
+                        overflow: hidden;
+                        margin: 10px auto;
+                        img{
+                            width:140px;
+                            height: 140px;
+                            margin: 10px auto;
+                        }
+                    }  
+                }
+           }
+       } 
+    }
+}
+
+.load-container{ 
+    position: fixed;
+    bottom:50px;
+    width: 100%;
+    z-index: 1000;
+    display: none;
+}
+
+// 页脚
+#footer{
+    height: 100px;
+    text-align: center;
+    .row{
+        >div{
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-left: 0px;
+            text-align: center;
+            &:last-child img{
+                width: 15px;
+                vertical-align: top;
+            }
+        }
+    }
+}
+/*加载中的效果*/
+  .load4 .loader {
+            font-size: 10px;
+            margin: 5em auto;
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+            position: relative;
+            text-indent: -9999em;
+            -webkit-animation: load4 1.3s infinite linear;
+            animation: load4 1.3s infinite linear;
+        }
+    @keyframes load4 {
+        0%,
+        100% {
+            box-shadow: 0em -3em 0em 0.2em #000, 2em -2em 0 0em #000, 3em 0em 0 -0.5em #000, 2em 2em 0 -0.5em #000, 0em 3em 0 -0.5em #000, -2em 2em 0 -0.5em #000, -3em 0em 0 -0.5em #000, -2em -2em 0 0em #000;
+        }
+        12.5% {
+            box-shadow: 0em -3em 0em 0em #000, 2em -2em 0 0.2em #000, 3em 0em 0 0em #000, 2em 2em 0 -0.5em #000, 0em 3em 0 -0.5em #000, -2em 2em 0 -0.5em #000, -3em 0em 0 -0.5em #000, -2em -2em 0 -0.5em #000;
+        }
+        25% {
+            box-shadow: 0em -3em 0em -0.5em #000, 2em -2em 0 0em #000, 3em 0em 0 0.2em #000, 2em 2em 0 0em #000, 0em 3em 0 -0.5em #000, -2em 2em 0 -0.5em #000, -3em 0em 0 -0.5em #000, -2em -2em 0 -0.5em #000;
+        }
+        37.5% {
+            box-shadow: 0em -3em 0em -0.5em #000, 2em -2em 0 -0.5em #000, 3em 0em 0 0em #000, 2em 2em 0 0.2em #000, 0em 3em 0 0em #000, -2em 2em 0 -0.5em #000, -3em 0em 0 -0.5em #000, -2em -2em 0 -0.5em #000;
+        }
+        50% {
+            box-shadow: 0em -3em 0em -0.5em #000, 2em -2em 0 -0.5em #000, 3em 0em 0 -0.5em #000, 2em 2em 0 0em #000, 0em 3em 0 0.2em #000, -2em 2em 0 0em #000, -3em 0em 0 -0.5em #000, -2em -2em 0 -0.5em #000;
+        }
+        62.5% {
+            box-shadow: 0em -3em 0em -0.5em #000, 2em -2em 0 -0.5em #000, 3em 0em 0 -0.5em #000, 2em 2em 0 -0.5em #000, 0em 3em 0 0em #000, -2em 2em 0 0.2em #000, -3em 0em 0 0em #000, -2em -2em 0 -0.5em #000;
+        }
+        75% {
+            box-shadow: 0em -3em 0em -0.5em #000, 2em -2em 0 -0.5em #000, 3em 0em 0 -0.5em #000, 2em 2em 0 -0.5em #000, 0em 3em 0 -0.5em #000, -2em 2em 0 0em #000, -3em 0em 0 0.2em #000, -2em -2em 0 0em #000;
+        }
+        87.5% {
+            box-shadow: 0em -3em 0em 0em #000, 2em -2em 0 -0.5em #000, 3em 0em 0 -0.5em #000, 2em 2em 0 -0.5em #000, 0em 3em 0 -0.5em #000, -2em 2em 0 0em #000, -3em 0em 0 0em #000, -2em -2em 0 0.2em #000;
+        }
+    }

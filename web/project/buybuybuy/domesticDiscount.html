@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>国内折扣</title>
+    <link rel="stylesheet" href="source/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/domesticDiscount.css">
+</head>
+<body>
+    <!--头部-->
+    <header id="header">
+        <a href="index.html" class="logo">
+            <img src="images/header_logo.png" alt="">    
+       </a>
+        <a href="index.html" class="download_app">
+            <img src="images/header_app.png" alt="">    
+       </a>
+    </header>
+
+    <main id="sly_goodsDiscount">
+        <div class="goodsListBox">
+            <ul class="clearfix">
+             
+            </ul>
+        </div>
+      
+    </main>
+   <footer id="footer">
+        <div class="row">
+            <div class="col-xs-4"><a href="">登录</ a></div>
+            <div class="col-xs-4"><a href="">注册</a></div>
+            <div class="col-xs-4"><img  class="arrows" src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</div>
+        </div>
+        <div class="">
+          <a href="#">手机APP下载</a>
+          <span>慢慢买手机版</span>
+          <span> -- 掌上比价平台</span>
+          <p> m.manmanbuy.com</p>
+        </div>
+    </footer>
+    <div class="load-container load4">
+        <div class="loader">Loading...</div>
+      </div>
+    <!--生成数据列表-->
+    <script type="text/template" id="goodsListBox">
+        {{each result as obj index}}
+            <li>
+                <a href="discount.html?productid={{obj.productId}}">
+                    <div class="imgContainer">{{#obj.productImg}}</div>
+                    <p>{{obj.productName}}</p>
+                    <p>{{obj.productPrice}}</p>
+                    <div class="info">
+                        {{obj.productFrom}} | {{obj.productTime}}
+                    </div>
+                </a>
+            </li>
+        {{/each}}
+    </script>
+    <script src="source/jquery/jquery.js"></script>
+    <script src="source/artTemplate/template.js"></script>
+    <!-- <script src="js/url.js"></script> -->
+    <script src="js/domesticDiscount.js"></script>
+</body>
+</html>

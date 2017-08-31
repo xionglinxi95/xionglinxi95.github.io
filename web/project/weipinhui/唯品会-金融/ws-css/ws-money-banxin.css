@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /*color: #fff;*/
+}
+
+#ws-banxin {
+    margin: 0 auto;
+    width: 873px;
+    height: auto;
+    height: 1096px;
+    /*background-color: #9195ff;*/
+    overflow: hidden;
+
+}
+
+#ws-lunbotu {
+    /*width: 1920px;*/
+    height: 272px;
+    /*background-color: #ffaeca;*/
+    background-color: #fff;
+}
+
+#ws-weipinbao {
+    width: 873px;
+    height: 266px;
+    /*background-color: #caffad;*/
+    margin-top: 10px;
+    margin-bottom: 25px;
+    /*position: relative;*/
+    overflow: hidden;
+    background-color: #fff;
+}
+
+#ws-baoxian {
+    width: 873px;
+    height: 502px;
+    margin-bottom: 25px;
+    /*background-color: #99ffe0;*/
+
+    overflow: hidden;
+    background-color: #fff;
+}
+
+#ws-weipinhua {
+    width: 873px;
+    height: 236px;
+    /*background-color: #ff9acf;*/
+    overflow: hidden;
+    background-color: #fff;
+}
+
+
+

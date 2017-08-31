@@ -1,0 +1,289 @@
+@import "wjsfont.less";
+@baseFont: #808080;
+.view {}
+
+
+/*头部工具栏*/
+
+.top_tool {
+    .row {
+        >div {
+            // border: 1px solid #000;
+            border-right: 1px solid #000;
+            border-bottom: 1px solid #000;
+            height: 40px;
+            display: block;
+            text-align: center;
+            line-height: 40px;
+            a {
+                color: @baseFont;
+            }
+            .btn {
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+/*微金所 导航条*/
+
+.wjs_nav {
+    nav {
+        margin-bottom: 0;
+        a {
+            height: 80px;
+            padding-top: 0;
+            padding-bottom: 0;
+            line-height: 80px;
+            &:hover,
+            &:focus {
+                border-bottom: 1px solid red;
+            }
+        }
+        .navbar-brand {
+            padding-top: 5px;
+            .wjsfont-logo {
+                font-size: 70px;
+                color: red;
+            }
+            .wjsfont-name {
+                font-size: 70px;
+                color: @baseFont;
+            }
+        }
+    }
+}
+
+
+/* 轮播图 */
+
+.wjs_carousel {
+    img {
+        width: 100%;
+    }
+}
+
+
+/* 支付交易保障 */
+
+.wjs_exchange {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .row {
+        >div {
+            margin-top: 20px;
+        }
+    }
+    a {
+        color: @baseFont;
+        &:hover {
+            color: red;
+        }
+        .wjsfont {
+            font-size: 40px;
+        }
+        h4 {
+            font-size: 22px;
+        }
+    }
+}
+
+
+/* 正在排队 */
+
+.wjs_waiting {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .pull-left {
+        >a {
+            color: red;
+            border-bottom: 1px dashed red;
+            text-decoration: none;
+        }
+    }
+    .pull-right {
+        >a {
+            color: #333333;
+            font-size: 16px;
+        }
+    }
+}
+
+
+/* 微投资 */
+
+.wjs_small_buy {
+    a {
+        color: @baseFont;
+        .cart {
+            padding-right: 80px;
+            position: relative;
+            background-color: #f7f7f7;
+            box-shadow: 1px 1px 1px 1px #ccc, -1px -1px 1px 1px #ccc;
+            .cart_content {
+                width: 100%;
+                border-right: 1px dashed #000;
+                h4 {
+                    padding-top: 40px;
+                    text-align: center;
+                }
+                .bottom_content {
+                    padding: 0 10px;
+                }
+            }
+            .cart_rate {
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 100%;
+                width: 80px;
+                padding-top: 50px;
+                text-align: center;
+                &:before {
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    top: 0;
+                    left: 0;
+                    background-color: #fff; //    transform: translateX(-50%) translateY(-50%);
+                    transform: translate(-50%, -50%);
+                    box-shadow: 0 2px 1px 0;
+                }
+                &:after {
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    bottom: 0;
+                    left: 0;
+                    background-color: #fff; //    transform: translateX(-50%) translateY(-50%);
+                    transform: translate(-50%, 50%);
+                    box-shadow: 0 -2px 1px 0;
+                }
+            }
+        }
+        /* 红色体验卡片 */
+        .cart_exp {
+            background-color: red;
+            color: #fff;
+            .cart_content {
+                border-right: 1px dashed #fff;
+                position: relative;
+                .wjsfont {
+                    position: absolute;
+                    font-size: 40px;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+        /* 进度条的卡片 */
+        .cart_progress {
+            .bottom_content {
+                /*  给pull-left pull-right   */
+                >div {
+                    width: 50%;
+                }
+            }
+            .cart_rate {
+                span:first-child {
+                    border: 1px solid red;
+                    color: red;
+                }
+                span:last-child {
+                    border: 1px solid green;
+                    color: green;
+                }
+            }
+        }
+    }
+}
+
+
+/* 新闻 */
+
+.wjs_news {
+    /* 全部新闻 */
+    .all_news {
+        font-size: 30px;
+        border-bottom: 1px solid #000;
+        position: relative;
+        &:before {
+            display: block;
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 1px solid #000;
+            right: 0;
+            bottom: 0; // transform: translateX()
+            transform: translateY(50%);
+            background-color: #fff;
+        }
+    }
+    /* 新闻标题 */
+    .news_title {
+        position: relative;
+        .line {
+            border-right: 1px dashed #000;
+            height: 400px;
+            position: absolute;
+            left: 75px;
+            z-index: -1;
+        }
+        ul {
+            list-style: none;
+            li {
+                a {
+                    display: block;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    background-color: #cccccc;
+                    text-align: center;
+                    margin-bottom: 50px;
+                    // line-height: 70px;
+                    padding-top: 10px;
+                    &:hover,
+                    &:focus {
+                        background-color: red;
+                    }
+                }
+                .wjsfont {
+                    font-size: 50px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+
+/*尾部 */
+
+footer {
+        ul{
+            list-style: none;
+            li{
+                float: left;
+                margin-left: 40px;
+                
+                span{
+                    font-size: 80px;
+                    color: @baseFont;
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+        }
+}

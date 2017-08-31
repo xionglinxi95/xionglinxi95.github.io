@@ -1,0 +1,160 @@
+@import "base.less";
+#header{  
+    background: #FF841D; 
+    width: 100%;
+    height:50px;
+    position: relative; 
+    line-height: 50px;
+  .logo{
+      position: absolute;
+      left: 10px;
+    img{ 
+        width: 200px;
+    }
+  }
+  .download_app{
+    position: absolute;
+      right: 10px;
+     img{
+         height: 30px;
+     }
+  } 
+}
+// 搜索
+#search{
+    width: 100%;
+    padding: 10px;
+    background: #fff;
+    form{
+        position: relative;
+         padding-right: 70px;
+        input[type="search"]{
+            font-size: 12px;
+            border: 0;
+            width: 100%;
+            background: #F1F1F1;
+            height: 30px;
+            border-radius: 20px;
+            text-indent: 20px;
+        }
+        a{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            height: 30px;
+            border-radius: 20px;
+            width: 60px;
+            color: #fff;
+            background: #FF841D;
+            padding: 0;
+            line-height: 30px;
+        }
+    }
+}
+#footer{
+    height: 100px;
+    text-align: center;
+    .row{
+        >div{
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-left: 0px;
+            text-align: center;
+            &:last-child img{
+                width: 15px;
+                vertical-align: top;
+            }
+        }
+    }
+}
+#detail {
+    position: relative;
+    background-color: #efefef;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    margin-right: 50px;
+    .breadcrumb {
+        margin-bottom: 0px;
+        width:100%;
+        li{
+            // padding: 3px;
+            &:before {
+                content: '';
+                padding: 0px;
+            }
+            &:after {
+                content:'>';
+            }
+        }
+    }
+    .btn-default {
+        position: absolute;
+        top:3px;
+        right: 10px;
+        height: 30px;
+    }
+}
+#main_body {
+    .media-list {
+        .media {
+            border-bottom: 1px solid #ccc;
+            margin:10px; 
+               .media-left {
+                margin:10px;
+                 img {
+                    width: 80px;
+                    height: 80px;
+                    margin-right: 20px;
+                 }
+               }
+               .media-body {
+                    h4 {
+                        font-size: 16px;
+                    }
+                    p {
+                        color: red;
+
+                    }
+                    span {
+                        color: #ccc;
+                        font-size: 12px;
+                    }
+               }
+            }
+
+        }
+    }
+
+#paging {
+    position: relative;
+    padding-top: 10px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    .dropdown {
+           text-align: center;
+        .dropdown-menu {
+            padding: 0px;
+            margin:0px;
+            left: 50%;
+            transform: translateX(-50%);
+            min-width: 80px;
+            width: 80px;
+             li {
+                border-bottom: 1px solid #ccc;
+                text-align: center;
+          }
+        }
+    }
+    .prev {
+        position: absolute;
+        top:10px;
+        left: 10px;
+
+    }
+    .next {
+        position: absolute;
+        right: 10px;
+        top:10px;
+    }
+}
